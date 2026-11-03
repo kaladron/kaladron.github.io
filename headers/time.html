@@ -1,16 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="../">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="uchar.h" href="uchar.html" /><link rel="prev" title="threads.h" href="threads.html" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="uchar.h" href="uchar.html"><link rel="prev" title="threads.h" href="threads.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>time.h - The LLVM C Library</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=710ac571" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=4db3a74f" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css?v=403646e9" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=99069b78" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=403646e9" />
     
     
 
@@ -23,14 +23,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -145,14 +145,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -162,8 +158,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -171,8 +166,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -180,8 +174,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -201,15 +194,17 @@
   <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_concepts.html">Build Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overlay_mode.html">Overlay Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../full_host_build.html">Full Host Build</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../complete_runtimes_build.html">Complete Runtimes Build for Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configure.html">Configure Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hand_in_hand.html">Hand-in-Hand</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../gpu/index.html">libc for GPUs</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of libc for GPUs</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gpu/index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../gpu/building.html">Building libs for GPUs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gpu/using.html">Using libc for GPUs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../gpu/support.html">Supported Functions</a></li>
@@ -218,7 +213,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../gpu/motivation.html">Motivation and Limitations</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of libc for UEFI</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../uefi/building.html">Building libc for UEFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../uefi/using.html">Using libc for UEFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../uefi/support.html">Supported Functions</a></li>
@@ -228,50 +223,100 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Implementation Status</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Implementation Status</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="aio.html">aio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="arpa/inet.html">arpa/inet.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="byteswap.html">byteswap.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="complex.html">complex.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="cpio.html">cpio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ctype.html">ctype.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dlfcn.html">dlfcn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="endian.html">endian.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fcntl.html">fcntl.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fenv.html">fenv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fmtmsg.html">fmtmsg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fnmatch.html">fnmatch.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ftw.html">ftw.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grp.html">grp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iconv.html">iconv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iso646.html">iso646.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langinfo.html">langinfo.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits.html">limits.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="locale.html">locale.h</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="math/index.html">math.h</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of math.h</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="math.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="math/log.html">Log/Log10/Log2 Algorithm</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="monetary.html">monetary.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqueue.html">mqueue.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ndbm.html">ndbm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="netdb.html">netdb.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pthread.html">pthread.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regex.html">regex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sched.html">sched.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="semaphore.html">semaphore.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setjmp.html">setjmp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdalign.html">stdalign.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdarg.html">stdarg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdatomic.html">stdatomic.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdbool.html">stdbool.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdckdint.html">stdckdint.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stddef.html">stddef.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdint.html">stdint.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdio.html">stdio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdnoreturn.html">stdnoreturn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="string.html">string.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/ipc.html">sys/ipc.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/msg.html">sys/msg.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/shm.html">sys/shm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/socket.html">sys/socket.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/stat.html">sys/stat.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/statvfs.html">sys/statvfs.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/times.html">sys/times.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/types.html">sys/types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/un.html">sys/un.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/utsname.html">sys/utsname.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tar.html">tar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tgmath.html">tgmath.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="threads.html">threads.h</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">time.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ulimit.html">ulimit.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utime.html">utime.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utmpx.html">utmpx.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wchar.html">wchar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wordexp.html">wordexp.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../arch_support.html">Architecture Support</a></li>
@@ -282,24 +327,30 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to the libc Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../build_and_test.html">Building and Testing the libc</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">Developer Guides</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Developer Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../dev/building_docs.html">Building the Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/code_style.html">The libc code style</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/entrypoints.html">Entrypoints in LLVM libc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev/cmake_build_rules.html">The libc CMake build system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/errno.html"><code class="docutils literal notranslate"><span class="pre">errno</span></code> and <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code> in LLVM-libc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/config_options.html">Adding new libc configure options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev/clang_tidy_checks.html">LLVM libc clang-tidy checks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/date_and_time.html">Date and Time</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/header_generation.html">Generating Public and Internal headers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/implementation_standard.html">Convention for implementing entrypoints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/undefined_behavior.html">Defining Undefined Behavior</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/code_coverage.html">Code Coverage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../porting.html">Bringup on a New OS or Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
@@ -330,18 +381,17 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/headers/time.rst?plain=true" title="View this page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/headers/time.md?plain=true" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
 </div><div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/headers/time.rst" rel="edit" title="Edit this page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/headers/time.md" rel="edit" title="Edit this page">
     <svg><use href="#svg-pencil"></use></svg>
     <span class="visually-hidden">Edit this page</span>
   </a>
 </div><div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -349,506 +399,842 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="time-h">
+          <!-- This file is autogenerated by docgen.py. Do not edit directly! -->
+<section id="time-h">
 <h1>time.h<a class="headerlink" href="#time-h" title="Link to this heading">¶</a></h1>
-<section id="source-location">
-<h2>Source location<a class="headerlink" href="#source-location" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>The main source for time functions is located at: <code class="docutils literal notranslate"><span class="pre">libc/src/time</span></code></p></li>
-</ul>
-</section>
-<section id="implementation-status">
-<h2>Implementation Status<a class="headerlink" href="#implementation-status" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>To check date and time functions enabled for Linux:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/linux/x86_64/entrypoints.txt">linux-x86_64</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/linux/aarch64/entrypoints.txt">linux-aarch64</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/linux/arm/entrypoints.txt">linux-aarch32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/linux/riscv/entrypoints.txt">linux-riscv and linux-riscv32</a></p></li>
-</ul>
-</li>
-<li><p>To check date and time functions enabled for Windows:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/windows/entrypoints.txt">windows-x86_64</a></p></li>
-<li><p>windows-aarch64 - to be added</p></li>
-</ul>
-</li>
-<li><p>To check date and time functions enabled for macOS:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/darwin/x86_64/entrypoints.txt">darwin-x86_64</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/darwin/aarch64/entrypoints.txt">darwin-aarch64</a></p></li>
-</ul>
-</li>
-<li><p>To check date and time functions enabled for GPU:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/gpu/amdgpu/entrypoints.txt">amdgpu-entrypoints</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/gpu/nvptx/entrypoints.txt">nvptx-entrypoints</a></p></li>
-</ul>
-</li>
-<li><p>To check date and time functions enabled for embedded system:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/baremetal/aarch64/entrypoints.txt">baremetal-aarch64</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/baremetal/arm/entrypoints.txt">baremetal-aarch32</a></p></li>
-<li><p><a class="reference external" href="https://github.com/llvm/llvm-project/tree/main/libc/config/baremetal/riscv/entrypoints.txt">baremetal-riscv32</a></p></li>
-</ul>
-</li>
-</ul>
-<div class="table-wrapper docutils container">
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head" rowspan="2"><p>&lt;Func&gt;</p></th>
-<th class="head" colspan="4"><p>Linux</p></th>
-<th class="head" colspan="2"><p>Windows</p></th>
-<th class="head" colspan="2"><p>MacOS</p></th>
-<th class="head" colspan="3"><p>Embedded</p></th>
-<th class="head" colspan="2"><p>GPU</p></th>
-</tr>
-<tr class="row-even"><th class="head"><p>x86_64</p></th>
-<th class="head"><p>aarch64</p></th>
-<th class="head"><p>aarch32</p></th>
-<th class="head"><p>riscv64/riscv32</p></th>
-<th class="head"><p>x86_64</p></th>
-<th class="head"><p>aarch64</p></th>
-<th class="head"><p>x86_64</p></th>
-<th class="head"><p>aarch64</p></th>
-<th class="head"><p>aarch64</p></th>
-<th class="head"><p>aarch32</p></th>
-<th class="head"><p>riscv32</p></th>
-<th class="head"><p>AMD</p></th>
-<th class="head"><p>nVidia</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-odd"><td><p>asctime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>asctime_r</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>ctime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>ctime_r</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>clock</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>clock_getcpuclockid</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>clock_getres</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>clock_gettime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-</tr>
-<tr class="row-odd"><td><p>clock_nanosleep</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>clock_settime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>difftime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>getdate</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>gettimeofday</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>gmtime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>gmtime_r</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>localtime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>localtime_r</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>mktime</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>nanosleep</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>strftime</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>strptime</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>time</p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td><p><span class="raw-html">&#x2705</span></p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>timer_create</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>timer_delete</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>timer_gettime</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>timer_getoverrun</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>timer_settime</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>tzset</p></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<style>
+:root {
+  --hc-green-text: #1a7f37;
+  --hc-green-bar: #1f883d;
+  --hc-blue-text: #0969da;
+  --hc-blue-bar: #0969da;
+  --hc-purple-text: #6639ba;
+  --hc-purple-bar: #8250df;
+  --hc-amber-text: #9a6700;
+  --hc-amber-bar: #d97706;
+  --hc-muted-bar: #6e7781;
+  --hc-track-bg: rgba(175, 184, 193, 0.4);
+  --hc-chip-missing-bg: rgba(217, 119, 6, 0.1);
+  --hc-chip-missing-border: rgba(180, 83, 9, 0.45);
+  --hc-chip-missing-text: #9a3412;
+  --hc-chip-impl-bg: rgba(31, 136, 61, 0.1);
+  --hc-chip-impl-border: rgba(26, 127, 55, 0.4);
+  --hc-chip-impl-text: #166534;
+  --hc-pill-c23-bg: rgba(9, 105, 218, 0.09);
+  --hc-pill-c23-border: rgba(9, 105, 218, 0.3);
+  --hc-pill-posix-bg: rgba(26, 127, 55, 0.09);
+  --hc-pill-posix-border: rgba(26, 127, 55, 0.3);
+  --hc-pill-ext-bg: rgba(110, 119, 129, 0.1);
+  --hc-pill-ext-border: rgba(110, 119, 129, 0.32);
+  --hc-pill-clang-bg: rgba(130, 80, 223, 0.09);
+  --hc-pill-clang-border: rgba(130, 80, 223, 0.3);
+}
+body[data-theme="dark"] {
+  --hc-green-text: #3fb950;
+  --hc-green-bar: #2ea043;
+  --hc-blue-text: #58a6ff;
+  --hc-blue-bar: #388bfd;
+  --hc-purple-text: #d2a8ff;
+  --hc-purple-bar: #a371f7;
+  --hc-amber-text: #e3b341;
+  --hc-amber-bar: #d29922;
+  --hc-muted-bar: #8b949e;
+  --hc-track-bg: rgba(110, 118, 129, 0.4);
+  --hc-chip-missing-bg: rgba(210, 153, 34, 0.15);
+  --hc-chip-missing-border: rgba(210, 153, 34, 0.5);
+  --hc-chip-missing-text: #f0b72f;
+  --hc-chip-impl-bg: rgba(46, 160, 67, 0.15);
+  --hc-chip-impl-border: rgba(63, 185, 80, 0.45);
+  --hc-chip-impl-text: #56d364;
+  --hc-pill-c23-bg: rgba(56, 139, 253, 0.15);
+  --hc-pill-c23-border: rgba(88, 166, 255, 0.4);
+  --hc-pill-posix-bg: rgba(46, 160, 67, 0.15);
+  --hc-pill-posix-border: rgba(63, 185, 80, 0.4);
+  --hc-pill-ext-bg: rgba(139, 148, 158, 0.15);
+  --hc-pill-ext-border: rgba(139, 148, 158, 0.4);
+  --hc-pill-clang-bg: rgba(163, 113, 247, 0.15);
+  --hc-pill-clang-border: rgba(210, 168, 255, 0.4);
+}
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) {
+    --hc-green-text: #3fb950;
+    --hc-green-bar: #2ea043;
+    --hc-blue-text: #58a6ff;
+    --hc-blue-bar: #388bfd;
+    --hc-purple-text: #d2a8ff;
+    --hc-purple-bar: #a371f7;
+    --hc-amber-text: #e3b341;
+    --hc-amber-bar: #d29922;
+    --hc-muted-bar: #8b949e;
+    --hc-track-bg: rgba(110, 118, 129, 0.4);
+    --hc-chip-missing-bg: rgba(210, 153, 34, 0.15);
+    --hc-chip-missing-border: rgba(210, 153, 34, 0.5);
+    --hc-chip-missing-text: #f0b72f;
+    --hc-chip-impl-bg: rgba(46, 160, 67, 0.15);
+    --hc-chip-impl-border: rgba(63, 185, 80, 0.45);
+    --hc-chip-impl-text: #56d364;
+    --hc-pill-c23-bg: rgba(56, 139, 253, 0.15);
+    --hc-pill-c23-border: rgba(88, 166, 255, 0.4);
+    --hc-pill-posix-bg: rgba(46, 160, 67, 0.15);
+    --hc-pill-posix-border: rgba(63, 185, 80, 0.4);
+    --hc-pill-ext-bg: rgba(139, 148, 158, 0.15);
+    --hc-pill-ext-border: rgba(139, 148, 158, 0.4);
+    --hc-pill-clang-bg: rgba(163, 113, 247, 0.15);
+    --hc-pill-clang-border: rgba(210, 168, 255, 0.4);
+  }
+}
+.hc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.content-icon-container .view-this-page,
+.content-icon-container .edit-this-page {
+  display: none !important;
+}
+.hc-pill {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 1px 6px;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.hc-pill-c23 {
+  background: var(--hc-pill-c23-bg);
+  color: var(--hc-blue-text);
+  border: 1px solid var(--hc-pill-c23-border);
+}
+.hc-pill-posix {
+  background: var(--hc-pill-posix-bg);
+  color: var(--hc-green-text);
+  border: 1px solid var(--hc-pill-posix-border);
+}
+.hc-pill-ext {
+  background: var(--hc-pill-ext-bg);
+  color: var(--color-foreground-secondary, #57606a);
+  border: 1px solid var(--hc-pill-ext-border);
+}
+.hc-pill-clang {
+  background: var(--hc-pill-clang-bg);
+  color: var(--hc-purple-text);
+  border: 1px solid var(--hc-pill-clang-border);
+}
+.header-card > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 10px 14px;
+  gap: 12px;
+  user-select: none;
+  border-radius: 6px;
+}
+.header-card > summary::-webkit-details-marker {
+  display: none;
+}
+.header-card > summary:focus-visible,
+.hc-btn:focus-visible,
+.hc-toggle-btn:focus-visible,
+.hc-input:focus-visible,
+.hc-page-link:focus-visible {
+  outline: 2px solid var(--hc-blue-text);
+  outline-offset: 2px;
+}
+.hc-chevron {
+  display: inline-block;
+  font-size: 0.75em;
+  color: var(--color-foreground-muted, #6c757d);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+.header-card[open] > summary .hc-chevron {
+  transform: rotate(90deg);
+}
+.hc-header-title-col {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  width: 250px;
+  flex-shrink: 0;
+}
+.hc-thermometer-col {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hc-action-col {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.hc-toggle-btn {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1px solid var(--color-background-border, #ccc);
+  background: var(--color-background-primary, #fff);
+  color: var(--color-foreground-primary, #24292f);
+  cursor: pointer;
+  min-height: 32px;
+}
+.hc-toggle-btn[aria-pressed="true"] {
+  background: var(--hc-blue-bar);
+  color: #ffffff;
+  border-color: var(--hc-blue-bar);
+  font-weight: 600;
+}
+.hc-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--color-background-border, #ccc);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background: var(--color-background-primary, #fff);
+  color: var(--color-foreground-primary, #24292f);
+  cursor: pointer;
+  min-height: 34px;
+}
+.hc-page-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border: 1px solid var(--color-background-border, #d0d7de);
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-foreground-secondary, #57606a);
+  background: var(--color-background-primary, #fff);
+  min-height: 28px;
+}
+.hc-chip-missing {
+  display: inline-block;
+  background: var(--hc-chip-missing-bg);
+  border: 1px solid var(--hc-chip-missing-border);
+  color: var(--hc-chip-missing-text);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin: 2px;
+  font-family: monospace;
+  font-size: 0.76rem;
+}
+.hc-chip-impl {
+  display: inline-block;
+  background: var(--hc-chip-impl-bg);
+  border: 1px solid var(--hc-chip-impl-border);
+  color: var(--hc-chip-impl-text);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin: 2px;
+  font-family: monospace;
+  font-size: 0.76rem;
+}
+.hc-table-wrap {
+  border: 1px solid var(--color-background-border, #e1e4e8);
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 12px 0 28px 0;
+  background: var(--color-background-primary, #fff);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+.hc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+.hc-table th {
+  background: var(--color-background-secondary, #f6f8fa);
+  border-bottom: 1px solid var(--color-background-border, #e1e4e8);
+  padding: 10px 14px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-foreground-muted, #57606a);
+  white-space: nowrap;
+}
+.hc-table th.hc-center,
+.hc-table td.hc-center {
+  text-align: center;
+}
+.hc-table td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--color-background-border, #eaecef);
+  vertical-align: middle;
+}
+.hc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.hc-table tbody tr:hover {
+  background: rgba(175, 184, 193, 0.08);
+}
+.hc-sym {
+  font-family: var(--font-stack--monospace, monospace);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-foreground-primary, #24292f);
+  background: none;
+  padding: 0;
+}
+.hc-status-yes {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--hc-chip-impl-bg);
+  color: var(--hc-green-text);
+  border: 1px solid var(--hc-chip-impl-border);
+}
+.hc-status-ulp {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  background: var(--hc-pill-c23-bg);
+  color: var(--hc-blue-text);
+  border: 1px solid var(--hc-pill-c23-border);
+  white-space: nowrap;
+}
+.hc-status-no {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  color: var(--color-foreground-muted, #8c959f);
+  opacity: 0.45;
+  font-size: 0.9rem;
+}
+.hc-status-na {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 4px;
+  color: var(--color-foreground-muted, #8c959f);
+  background: rgba(175, 184, 193, 0.14);
+}
+.hc-sec-badge {
+  font-family: var(--font-stack--monospace, monospace);
+  font-size: 0.78rem;
+  color: var(--color-foreground-secondary, #57606a);
+  background: var(--color-background-secondary, #f6f8fa);
+  border: 1px solid var(--color-background-border, #e1e4e8);
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.hc-posix-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  padding: 1px 7px;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-posix-link:hover {
+  text-decoration: underline;
+}
+.hc-plat-pill {
+  display: inline-block;
+  font-family: var(--font-stack--monospace, monospace);
+  font-size: 0.72rem;
+  padding: 1px 6px;
+  margin: 1px 2px;
+  border-radius: 4px;
+  background: var(--color-background-secondary, #f6f8fa);
+  border: 1px solid var(--color-background-border, #d0d7de);
+  color: var(--color-foreground-secondary, #57606a);
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .header-card > summary {
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  .hc-header-title-col {
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .hc-action-col {
+    margin-left: auto;
+  }
+  .hc-thermometer-col {
+    width: 100%;
+    flex: 1 1 100%;
+    order: 3;
+  }
+}
+@media (forced-colors: active) {
+  .hc-progress-fill {
+    background: Highlight !important;
+  }
+  .hc-progress-track {
+    border: 1px solid CanvasText;
+  }
+}
+</style>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 20px;">
+     <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">C23 Standard</div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">33 / 34 <span style="font-size: 0.75em; color: var(--hc-green-text);">(97.1%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h C23 Standard completion" aria-valuenow="97.1" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 97.1%; height: 100%;"></div></div>
+     </div>
+     <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">POSIX.1-2024</div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">47 / 50 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(94.0%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h POSIX.1-2024 completion" aria-valuenow="94.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 94.0%; height: 100%;"></div></div>
+     </div>
+     <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Functions</div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">27 / 29 <span style="font-size: 0.75em; color: var(--hc-green-text);">(93.1%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h Functions completion" aria-valuenow="93.1" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 93.1%; height: 100%;"></div></div>
+     </div>
+     <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Macros</div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">3 / 3 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(100.0%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h Macros completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 100.0%; height: 100%;"></div></div>
+     </div>
+     <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Types</div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">14 / 14 <span style="font-size: 0.75em; color: var(--hc-purple-text);">(100.0%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h Types completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-purple-bar); width: 100.0%; height: 100%;"></div></div>
+     </div>
+     <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Objects</div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">3 / 4 <span style="font-size: 0.75em; color: var(--hc-amber-text);">(75.0%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h Objects completion" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-amber-bar); width: 75.0%; height: 100%;"></div></div>
+     </div>
+</div></section>
+<section id="types">
+<h2>Types<a class="headerlink" href="#types" title="Link to this heading">¶</a></h2>
+   <div class="hc-table-wrap">
+     <table class="hc-table">
+       <thead>
+         <tr>
+           <th>Type</th>
+           <th class="hc-center">Status</th>
+           <th class="hc-center">C23 Section</th>
+           <th class="hc-center">POSIX Docs</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td><code class="hc-sym">clock_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clockid_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">errno_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">locale_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">pid_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">rsize_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">size_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">struct itimerspec</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">struct timespec</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">struct timeval</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">struct tm</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">time_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timer_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tm_gmtoff_t</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+       </tbody>
+     </table>
+   </div></section>
+<section id="objects-and-variables">
+<h2>Objects and Variables<a class="headerlink" href="#objects-and-variables" title="Link to this heading">¶</a></h2>
+   <div class="hc-table-wrap">
+     <table class="hc-table">
+       <thead>
+         <tr>
+           <th>Object</th>
+           <th class="hc-center">Status</th>
+           <th class="hc-center">C23 Section</th>
+           <th class="hc-center">POSIX Docs</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td><code class="hc-sym">daylight</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">getdate_err</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timezone</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tzname</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+       </tbody>
+     </table>
+   </div></section>
+<section id="macros">
+<h2>Macros<a class="headerlink" href="#macros" title="Link to this heading">¶</a></h2>
+   <div class="hc-table-wrap">
+     <table class="hc-table">
+       <thead>
+         <tr>
+           <th>Macro</th>
+           <th class="hc-center">Status</th>
+           <th class="hc-center">C23 Section</th>
+           <th class="hc-center">POSIX Docs</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td><code class="hc-sym">CLOCKS_PER_SEC</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">NULL</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">TIMER_ABSTIME</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+       </tbody>
+     </table>
+   </div></section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+   <div class="hc-table-wrap">
+     <table class="hc-table">
+       <thead>
+         <tr>
+           <th>Function</th>
+           <th class="hc-center">Status</th>
+           <th class="hc-center">C23 Section</th>
+           <th class="hc-center">POSIX Docs</th>
+           <th>Target Availability</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td><code class="hc-sym">asctime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.1</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/asctime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">asctime_r</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/asctime_r.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clock</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.1</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clock_getcpuclockid</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_getcpuclockid.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clock_getres</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_getres.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clock_gettime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_gettime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clock_nanosleep</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_nanosleep.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">clock_settime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_settime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ctime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.2</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ctime_r</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctime_r.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">difftime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.2</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/difftime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">getdate</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getdate.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">gmtime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.3</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">gmtime_r</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime_r.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">localtime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.4</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/localtime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">localtime_r</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/localtime_r.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">mktime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.3</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mktime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">nanosleep</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/nanosleep.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strftime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.3.5</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strftime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strftime_l</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strftime_l.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strptime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strptime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, x86_64">linux (2)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">time</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.4</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/time.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timer_create</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_create.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timer_delete</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_delete.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timer_getoverrun</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_getoverrun.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timer_gettime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_gettime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timer_settime</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_settime.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">timespec_get</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-sec-badge">7.27.2.5</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timespec_get.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tzset</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/tzset.html">POSIX.1-2024 &#8599;</a></td>
+           <td><span class="hc-plat-pill" title="linux: aarch64, x86_64">linux (2)</span></td>
+         </tr>
+       </tbody>
+     </table>
+   </div></section>
 </section>
 
         </article>
@@ -907,8 +1293,11 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">time.h</a><ul>
-<li><a class="reference internal" href="#source-location">Source location</a></li>
-<li><a class="reference internal" href="#implementation-status">Implementation Status</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+<li><a class="reference internal" href="#types">Types</a></li>
+<li><a class="reference internal" href="#objects-and-variables">Objects and Variables</a></li>
+<li><a class="reference internal" href="#macros">Macros</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
 </ul>
 </li>
 </ul>
@@ -921,9 +1310,9 @@
     </aside>
   </div>
 </div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="module" src="../_static/scripts/furo.js?v=e16e2f1e"></script>
-    <script src="../_static/copybutton.js?v=487adb72"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js?v=972498a0"></script>
     </body>
 </html>

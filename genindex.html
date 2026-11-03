@@ -1,14 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="./">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#"><link rel="search" title="Search" href="search.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 --><title>Index - The LLVM C Library</title>
-<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=710ac571" />
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 --><title>Index - The LLVM C Library</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=4db3a74f" />
+    <link rel="stylesheet" type="text/css" href="_static/llvm-sphinx/copybutton.css?v=403646e9" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=99069b78" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=403646e9" />
     
     
 
@@ -21,14 +21,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -143,14 +143,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -160,8 +156,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -169,8 +164,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -178,8 +172,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -199,15 +192,17 @@
   <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_concepts.html">Build Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overlay_mode.html">Overlay Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="full_host_build.html">Full Host Build</a></li>
 <li class="toctree-l1"><a class="reference internal" href="full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complete_runtimes_build.html">Complete Runtimes Build for Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configure.html">Configure Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hand_in_hand.html">Hand-in-Hand</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="gpu/index.html">libc for GPUs</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of libc for GPUs</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="gpu/index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="gpu/building.html">Building libs for GPUs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/using.html">Using libc for GPUs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gpu/support.html">Supported Functions</a></li>
@@ -216,7 +211,7 @@
 <li class="toctree-l2"><a class="reference internal" href="gpu/motivation.html">Motivation and Limitations</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="uefi/index.html">libc for UEFI</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of libc for UEFI</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="uefi/building.html">Building libc for UEFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uefi/using.html">Using libc for UEFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uefi/support.html">Supported Functions</a></li>
@@ -226,50 +221,100 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="headers/index.html">Implementation Status</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Implementation Status</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="headers/index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="headers/aio.html">aio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/arpa/inet.html">arpa/inet.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/byteswap.html">byteswap.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/complex.html">complex.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/cpio.html">cpio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/ctype.html">ctype.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/dlfcn.html">dlfcn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/endian.html">endian.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/fcntl.html">fcntl.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/fenv.html">fenv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/fmtmsg.html">fmtmsg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/fnmatch.html">fnmatch.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/ftw.html">ftw.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/grp.html">grp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/iconv.html">iconv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/iso646.html">iso646.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/langinfo.html">langinfo.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/limits.html">limits.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/locale.html">locale.h</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="headers/math/index.html">math.h</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of math.h</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="headers/math.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="headers/math/log.html">Log/Log10/Log2 Algorithm</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="headers/monetary.html">monetary.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/mqueue.html">mqueue.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/ndbm.html">ndbm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/netdb.html">netdb.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/pthread.html">pthread.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/regex.html">regex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sched.html">sched.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/semaphore.html">semaphore.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/setjmp.html">setjmp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdalign.html">stdalign.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdarg.html">stdarg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdatomic.html">stdatomic.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdbool.html">stdbool.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdckdint.html">stdckdint.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stddef.html">stddef.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdint.html">stdint.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/stdio.html">stdio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/stdnoreturn.html">stdnoreturn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/string.html">string.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/ipc.html">sys/ipc.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/msg.html">sys/msg.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/shm.html">sys/shm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/socket.html">sys/socket.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/stat.html">sys/stat.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/statvfs.html">sys/statvfs.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/times.html">sys/times.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/types.html">sys/types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/sys/un.html">sys/un.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/utsname.html">sys/utsname.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/tar.html">tar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/tgmath.html">tgmath.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/threads.html">threads.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/time.html">time.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/ulimit.html">ulimit.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/utime.html">utime.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/utmpx.html">utmpx.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/wchar.html">wchar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="headers/wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="headers/wordexp.html">wordexp.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="arch_support.html">Architecture Support</a></li>
@@ -280,24 +325,30 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the libc Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="build_and_test.html">Building and Testing the libc</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="dev/index.html">Developer Guides</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Developer Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="dev/index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="dev/building_docs.html">Building the Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/code_style.html">The libc code style</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/entrypoints.html">Entrypoints in LLVM libc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dev/cmake_build_rules.html">The libc CMake build system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/errno.html"><code class="docutils literal notranslate"><span class="pre">errno</span></code> and <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code> in LLVM-libc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/config_options.html">Adding new libc configure options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dev/clang_tidy_checks.html">LLVM libc clang-tidy checks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/date_and_time.html">Date and Time</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/header_generation.html">Generating Public and Internal headers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/implementation_standard.html">Convention for implementing entrypoints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/undefined_behavior.html">Defining Undefined Behavior</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/code_coverage.html">Code Coverage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="porting.html">Bringup on a New OS or Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
@@ -328,8 +379,7 @@
         </a>
         <div class="content-icon-container">
           <div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -337,8 +387,7 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
@@ -380,9 +429,9 @@
     </aside>
   </div>
 </div><script src="_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="module" src="_static/scripts/furo.js?v=e16e2f1e"></script>
-    <script src="_static/copybutton.js?v=487adb72"></script>
+    <script src="_static/llvm-sphinx/copybutton.js?v=972498a0"></script>
     </body>
 </html>

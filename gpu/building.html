@@ -1,16 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="en" data-content_root="../">
-  <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Using libc for GPUs" href="using.html" /><link rel="prev" title="libc for GPUs" href="index.html" />
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Using libc for GPUs" href="using.html"><link rel="prev" title="libc for GPUs" href="index.html">
 
-    <!-- Generated with Sphinx 8.2.3 and Furo 2025.07.19 -->
+    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Building libs for GPUs - The LLVM C Library</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=710ac571" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=4db3a74f" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css?v=403646e9" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=99069b78" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=403646e9" />
     
     
 
@@ -23,14 +23,14 @@
   }
   @media not print {
     body[data-theme="dark"] {
-      --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
     }
     @media (prefers-color-scheme: dark) {
       body:not([data-theme="light"]) {
-        --color-code-background: #2b2b2b;
-  --color-code-foreground: #f8f8f2;
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
   
       }
     }
@@ -145,14 +145,10 @@
   </symbol>
 </svg>
 
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
-<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
-<label class="overlay sidebar-overlay" for="__navigation">
-  <div class="visually-hidden">Hide navigation sidebar</div>
-</label>
-<label class="overlay toc-overlay" for="__toc">
-  <div class="visually-hidden">Hide table of contents sidebar</div>
-</label>
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
 
 <a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
 
@@ -162,8 +158,7 @@
   <header class="mobile-header">
     <div class="header-left">
       <label class="nav-overlay-icon" for="__navigation">
-        <div class="visually-hidden">Toggle site navigation sidebar</div>
-        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
       </label>
     </div>
     <div class="header-center">
@@ -171,8 +166,7 @@
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
-        <button class="theme-toggle">
-          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
           <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
           <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
           <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -180,8 +174,7 @@
         </button>
       </div>
       <label class="toc-overlay-icon toc-header-icon" for="__toc">
-        <div class="visually-hidden">Toggle table of contents sidebar</div>
-        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
   </header>
@@ -201,15 +194,17 @@
   <p class="caption" role="heading"><span class="caption-text">Using LLVM-libc</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build_concepts.html">Build Concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overlay_mode.html">Overlay Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../full_host_build.html">Full Host Build</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../full_cross_build.html">Full Cross Build</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../complete_runtimes_build.html">Complete Runtimes Build for Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../configure.html">Configure Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hand_in_hand.html">Hand-in-Hand</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
 <ul class="current">
-<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">libc for GPUs</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of libc for GPUs</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">libc for GPUs</a><input aria-label="Toggle navigation of libc for GPUs" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Building libs for GPUs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="using.html">Using libc for GPUs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Supported Functions</a></li>
@@ -218,7 +213,7 @@
 <li class="toctree-l2"><a class="reference internal" href="motivation.html">Motivation and Limitations</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of libc for UEFI</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../uefi/index.html">libc for UEFI</a><input aria-label="Toggle navigation of libc for UEFI" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../uefi/building.html">Building libc for UEFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../uefi/using.html">Using libc for UEFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../uefi/support.html">Supported Functions</a></li>
@@ -228,50 +223,100 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Implementation Status</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../headers/index.html">Implementation Status</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Implementation Status</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../headers/index.html">Implementation Status</a><input aria-label="Toggle navigation of Implementation Status" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../headers/aio.html">aio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/arpa/inet.html">arpa/inet.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/assert.html">assert.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/byteswap.html">byteswap.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/complex.html">complex.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/cpio.html">cpio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/ctype.html">ctype.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/dirent.html">dirent.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/dlfcn.html">dlfcn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/endian.html">endian.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/errno.html">errno.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fcntl.html">fcntl.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/fenv.html">fenv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fmtmsg.html">fmtmsg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/fnmatch.html">fnmatch.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/ftw.html">ftw.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/grp.html">grp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/iconv.html">iconv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/iso646.html">iso646.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/langinfo.html">langinfo.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/limits.html">limits.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/locale.html">locale.h</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../headers/math/index.html">math.h</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of math.h</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../headers/math.html">math.h</a><input aria-label="Toggle navigation of math.h" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../headers/math/log.html">Log/Log10/Log2 Algorithm</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/monetary.html">monetary.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/mqueue.html">mqueue.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/ndbm.html">ndbm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netdb.html">netdb.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/netinet/in.html">netinet/in.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/netinet/tcp.html">netinet/tcp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/nl_types.html">nl_types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/poll.html">poll.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pthread.html">pthread.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/regex.html">regex.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sched.html">sched.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/semaphore.html">semaphore.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/setjmp.html">setjmp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/signal.html">signal.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/spawn.html">spawn.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdalign.html">stdalign.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdarg.html">stdarg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdatomic.html">stdatomic.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdbool.html">stdbool.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdckdint.html">stdckdint.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stddef.html">stddef.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/stdfix.html">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdint.html">stdint.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/stdio.html">stdio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/stdlib.html">stdlib.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/stdnoreturn.html">stdnoreturn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/string.html">string.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/strings.html">strings.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/ipc.html">sys/ipc.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/mman.html">sys/mman.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/msg.html">sys/msg.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/resource.html">sys/resource.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/select.html">sys/select.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/shm.html">sys/shm.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/socket.html">sys/socket.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/stat.html">sys/stat.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/statvfs.html">sys/statvfs.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/times.html">sys/times.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/types.html">sys/types.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/sys/un.html">sys/un.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/utsname.html">sys/utsname.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/sys/wait.html">sys/wait.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/tar.html">tar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/termios.html">termios.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/tgmath.html">tgmath.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/threads.html">threads.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/time.html">time.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/ulimit.html">ulimit.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/utime.html">utime.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/utmpx.html">utmpx.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/wchar.html">wchar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../headers/wctype.html">wctype.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../headers/wordexp.html">wordexp.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../arch_support.html">Architecture Support</a></li>
@@ -282,24 +327,30 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to the libc Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../build_and_test.html">Building and Testing the libc</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">Developer Guides</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Developer Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../dev/index.html">Developer Guides</a><input aria-label="Toggle navigation of Developer Guides" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../dev/building_docs.html">Building the Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/code_style.html">The libc code style</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/source_tree_layout.html">LLVM-libc Source Tree Layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/entrypoints.html">Entrypoints in LLVM libc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev/cmake_build_rules.html">The libc CMake build system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/implementing_a_function.html">Implementing a New Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/errno.html"><code class="docutils literal notranslate"><span class="pre">errno</span></code> and <code class="docutils literal notranslate"><span class="pre">libc_errno</span></code> in LLVM-libc</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/config_options.html">Adding new libc configure options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev/clang_tidy_checks.html">LLVM libc clang-tidy checks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/date_and_time.html">Date and Time</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/fuzzing.html">Fuzzing for LLVM-libc functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/fuzzing.html#types-of-fuzz-tests">Types of fuzz tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/header_generation.html">Generating Public and Internal headers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/implementation_standard.html">Convention for implementing entrypoints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/undefined_behavior.html">Defining Undefined Behavior</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../dev/printf_behavior.html">Printf Behavior Under All Conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/builtin_compatibility.html">GCC Compatibility of Builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/syscall_wrapper_refactor.html">Syscall Wrapper Refactoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/modular_format.html">Modular format strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev/code_coverage.html">Code Coverage</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../porting.html">Bringup on a New OS or Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Maintainers.html">LLVM-libc Maintainers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Maintainers.html#inactive-maintainers">Inactive Maintainers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
@@ -330,18 +381,17 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/gpu/building.rst?plain=true" title="View this page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/blob/main/libc/docs/gpu/building.md?plain=true" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
 </div><div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/gpu/building.rst" rel="edit" title="Edit this page">
+  <a class="muted-link" href="https://github.com/llvm/llvm-project/edit/main/libc/docs/gpu/building.md" rel="edit" title="Edit this page">
     <svg><use href="#svg-pencil"></use></svg>
     <span class="visually-hidden">Edit this page</span>
   </a>
 </div><div class="theme-toggle-container theme-toggle-content">
-            <button class="theme-toggle">
-              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
               <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
               <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
@@ -349,8 +399,7 @@
             </button>
           </div>
           <label class="toc-overlay-icon toc-content-icon" for="__toc">
-            <div class="visually-hidden">Toggle table of contents sidebar</div>
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
@@ -370,26 +419,28 @@ support using the <code class="docutils literal notranslate"><span class="pre">-
 describe how to build the GPU support specifically.</p>
 <p>Once you have finished building, refer to <a class="reference internal" href="using.html#libc-gpu-usage"><span class="std std-ref">Using libc for GPUs</span></a> to get started
 with the newly built C library.</p>
-<section id="standard-runtimes-build">
-<h3>Standard runtimes build<a class="headerlink" href="#standard-runtimes-build" title="Link to this heading">¶</a></h3>
-<p>The simplest way to build the GPU libc is to use the existing LLVM runtimes
-support. This will automatically handle bootstrapping an up-to-date <code class="docutils literal notranslate"><span class="pre">clang</span></code>
-compiler and using it to build the C library. The following CMake invocation
-will instruct it to build the <code class="docutils literal notranslate"><span class="pre">libc</span></code> runtime targeting both AMD and NVIDIA
-GPUs. The <code class="docutils literal notranslate"><span class="pre">LIBC_GPU_BUILD</span></code> option can also be enabled to add the relevant
-arguments automatically.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>llvm-project<span class="w">  </span><span class="c1"># The llvm-project checkout</span>
-$&gt;<span class="w"> </span>mkdir<span class="w"> </span>build
-$&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-$&gt;<span class="w"> </span>cmake<span class="w"> </span>../llvm<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w">                                                 </span><span class="se">\</span>
-<span class="w">   </span>-DLLVM_ENABLE_PROJECTS<span class="o">=</span><span class="s2">&quot;clang;lld&quot;</span><span class="w">                                     </span><span class="se">\</span>
-<span class="w">   </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span><span class="s2">&quot;openmp;offload&quot;</span><span class="w">                                </span><span class="se">\</span>
-<span class="w">   </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>&lt;Debug<span class="p">|</span>Release&gt;<span class="w">   </span><span class="se">\ </span><span class="c1"># Select build type</span>
-<span class="w">   </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span>&lt;PATH&gt;<span class="w">        </span><span class="se">\ </span><span class="c1"># Where the libraries will live</span>
-<span class="w">   </span>-DRUNTIMES_nvptx64-nvidia-cuda_LLVM_ENABLE_RUNTIMES<span class="o">=</span>libc<span class="w">               </span><span class="se">\</span>
-<span class="w">   </span>-DRUNTIMES_amdgcn-amd-amdhsa_LLVM_ENABLE_RUNTIMES<span class="o">=</span>libc<span class="w">                 </span><span class="se">\</span>
+<section id="bootstrap-build">
+<h3>Bootstrap Build<a class="headerlink" href="#bootstrap-build" title="Link to this heading">¶</a></h3>
+<p>The recommended way to build the GPU libc is using a <strong>Bootstrap Build</strong> (see <a class="reference internal" href="../build_concepts.html#build-concepts"><span class="std std-ref">Build Concepts</span></a> for an overview of build modes). This approach first builds the compiler (<code class="docutils literal notranslate"><span class="pre">clang</span></code>) and tools using the host compiler, and then automatically uses that newly-built compiler to build the C library for the GPU targets in a single CMake invocation. This is ideal for building for multiple GPU vendors at once.</p>
+<p>Set the environment variables for the build:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">BUILD_DIR</span><span class="o">=</span>build
+<span class="nb">export</span><span class="w"> </span><span class="nv">INSTALL_PREFIX</span><span class="o">=</span>install
+<span class="nb">export</span><span class="w"> </span><span class="nv">BUILD_TYPE</span><span class="o">=</span>Release
+</pre></div>
+</div>
+<p>Configure the project:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-S<span class="w"> </span>llvm<span class="w"> </span>-B<span class="w"> </span><span class="nv">$BUILD_DIR</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DLLVM_ENABLE_PROJECTS<span class="o">=</span><span class="s2">&quot;clang;lld&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span><span class="s2">&quot;openmp;offload&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DCMAKE_BUILD_TYPE<span class="o">=</span><span class="nv">$BUILD_TYPE</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DCMAKE_INSTALL_PREFIX<span class="o">=</span><span class="nv">$INSTALL_PREFIX</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DRUNTIMES_nvptx64-nvidia-cuda_LLVM_ENABLE_RUNTIMES<span class="o">=</span>libc<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DRUNTIMES_amdgcn-amd-amdhsa_LLVM_ENABLE_RUNTIMES<span class="o">=</span>libc<span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>-DLLVM_RUNTIME_TARGETS<span class="o">=</span><span class="s2">&quot;default;amdgcn-amd-amdhsa;nvptx64-nvidia-cuda&quot;</span>
-$&gt;<span class="w"> </span>ninja<span class="w"> </span>install
+</pre></div>
+</div>
+<p>Build and install the libraries:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>ninja<span class="w"> </span>-C<span class="w"> </span><span class="nv">$BUILD_DIR</span><span class="w"> </span>install
 </pre></div>
 </div>
 <p>We need <code class="docutils literal notranslate"><span class="pre">clang</span></code> to build the GPU C library and <code class="docutils literal notranslate"><span class="pre">lld</span></code> to link AMDGPU
@@ -402,47 +453,48 @@ Note that if <code class="docutils literal notranslate"><span class="pre">libc</
 targeting the default host environment as well. Alternatively, you can point
 your build towards the <code class="docutils literal notranslate"><span class="pre">libc/cmake/caches/gpu.cmake</span></code> cache file with <code class="docutils literal notranslate"><span class="pre">-C</span></code>.</p>
 </section>
-<section id="runtimes-cross-build">
-<h3>Runtimes cross build<a class="headerlink" href="#runtimes-cross-build" title="Link to this heading">¶</a></h3>
-<p>For users wanting more direct control over the build process, the build steps
-can be done manually instead. This build closely follows the instructions in the
-<a class="reference internal" href="../full_cross_build.html#full-cross-build"><span class="std std-ref">main documentation</span></a> but is specialized for the GPU
-build. We follow the same steps to first build the libc tools and a suitable
-compiler. These tools must all be up-to-date with the libc source.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>llvm-project<span class="w">  </span><span class="c1"># The llvm-project checkout</span>
-$&gt;<span class="w"> </span>mkdir<span class="w"> </span>build-libc-tools<span class="w"> </span><span class="c1"># A different build directory for the build tools</span>
-$&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build-libc-tools
-$&gt;<span class="w"> </span><span class="nv">HOST_C_COMPILER</span><span class="o">=</span>&lt;C<span class="w"> </span>compiler<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>host&gt;<span class="w"> </span><span class="c1"># For example &quot;clang&quot;</span>
-$&gt;<span class="w"> </span><span class="nv">HOST_CXX_COMPILER</span><span class="o">=</span>&lt;C++<span class="w"> </span>compiler<span class="w"> </span><span class="k">for</span><span class="w"> </span>the<span class="w"> </span>host&gt;<span class="w"> </span><span class="c1"># For example &quot;clang++&quot;</span>
-$&gt;<span class="w"> </span>cmake<span class="w"> </span>../llvm<span class="w">                            </span><span class="se">\</span>
-<span class="w">   </span>-G<span class="w"> </span>Ninja<span class="w">                                 </span><span class="se">\</span>
-<span class="w">   </span>-DLLVM_ENABLE_PROJECTS<span class="o">=</span><span class="s2">&quot;clang&quot;</span><span class="w">           </span><span class="se">\</span>
-<span class="w">   </span>-DCMAKE_C_COMPILER<span class="o">=</span><span class="nv">$HOST_C_COMPILER</span><span class="w">      </span><span class="se">\</span>
-<span class="w">   </span>-DCMAKE_CXX_COMPILER<span class="o">=</span><span class="nv">$HOST_CXX_COMPILER</span><span class="w">  </span><span class="se">\</span>
-<span class="w">   </span>-DLLVM_LIBC_FULL_BUILD<span class="o">=</span>ON<span class="w">                </span><span class="se">\</span>
-<span class="w">   </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="c1"># Release suggested to make &quot;clang&quot; fast</span>
-$&gt;<span class="w"> </span>ninja<span class="w"> </span><span class="c1"># Build the &#39;clang&#39; compiler</span>
+<section id="two-stage-cross-compiler-build">
+<h3>Two-stage Cross-compiler Build<a class="headerlink" href="#two-stage-cross-compiler-build" title="Link to this heading">¶</a></h3>
+<p>Alternatively, you can use a manual <strong>Two-stage Cross-compiler Build</strong> (see <a class="reference internal" href="../build_concepts.html#build-concepts"><span class="std std-ref">Build Concepts</span></a>). This separates the build into two distinct CMake invocations: first to build the host compiler and tools (Stage 1), and then to build the target library using those tools (Stage 2). This provides more direct control over the configuration and is useful if you only need to build for a single target or want to avoid the complexity of the combined bootstrap build.</p>
+<p>First, build the host compiler. Set up the variables for the host build:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">HOST_BUILD_DIR</span><span class="o">=</span>build-libc-tools
+<span class="nb">export</span><span class="w"> </span><span class="nv">HOST_C_COMPILER</span><span class="o">=</span>clang
+<span class="nb">export</span><span class="w"> </span><span class="nv">HOST_CXX_COMPILER</span><span class="o">=</span>clang++
 </pre></div>
 </div>
-<p>Once this has finished the build directory should contain the <code class="docutils literal notranslate"><span class="pre">clang</span></code>
-compiler executable. We will use the <code class="docutils literal notranslate"><span class="pre">clang</span></code> compiler to build the GPU code.
-We use these tools to bootstrap the build out of the runtimes directory
-targeting a GPU architecture.</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>llvm-project<span class="w">  </span><span class="c1"># The llvm-project checkout</span>
-$&gt;<span class="w"> </span>mkdir<span class="w"> </span>build<span class="w"> </span><span class="c1"># A different build directory for the build tools</span>
-$&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-$&gt;<span class="w"> </span><span class="nv">TARGET_TRIPLE</span><span class="o">=</span>&lt;amdgcn-amd-amdhsa<span class="w"> </span>or<span class="w"> </span>nvptx64-nvidia-cuda&gt;
-$&gt;<span class="w"> </span><span class="nv">TARGET_C_COMPILER</span><span class="o">=</span>&lt;/path/to/clang&gt;
-$&gt;<span class="w"> </span><span class="nv">TARGET_CXX_COMPILER</span><span class="o">=</span>&lt;/path/to/clang++&gt;
-$&gt;<span class="w"> </span>cmake<span class="w"> </span>../runtimes<span class="w"> </span><span class="se">\ </span><span class="c1"># Point to the runtimes build</span>
-<span class="w">   </span>-G<span class="w"> </span>Ninja<span class="w">                                    </span><span class="se">\</span>
-<span class="w">   </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span>libc<span class="w">                 </span><span class="se">\</span>
-<span class="w">   </span>-DCMAKE_C_COMPILER<span class="o">=</span><span class="nv">$TARGET_C_COMPILER</span><span class="w">       </span><span class="se">\</span>
+<p>Configure the host build:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-S<span class="w"> </span>llvm<span class="w"> </span>-B<span class="w"> </span><span class="nv">$HOST_BUILD_DIR</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DLLVM_ENABLE_PROJECTS<span class="o">=</span><span class="s2">&quot;clang&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DCMAKE_C_COMPILER<span class="o">=</span><span class="nv">$HOST_C_COMPILER</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DCMAKE_CXX_COMPILER<span class="o">=</span><span class="nv">$HOST_CXX_COMPILER</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DLLVM_LIBC_FULL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release
+</pre></div>
+</div>
+<p>Build the host tools:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>ninja<span class="w"> </span>-C<span class="w"> </span><span class="nv">$HOST_BUILD_DIR</span>
+</pre></div>
+</div>
+<p>Once this has finished, use the newly built compiler to build the C library for the GPU. Select your target architecture (<code class="docutils literal notranslate"><span class="pre">amdgcn-amd-amdhsa</span></code> or <code class="docutils literal notranslate"><span class="pre">nvptx64-nvidia-cuda</span></code>).</p>
+<p>Set up the variables for the target build:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">TARGET_TRIPLE</span><span class="o">=</span>amdgcn-amd-amdhsa<span class="w"> </span><span class="c1"># or nvptx64-nvidia-cuda</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TARGET_BUILD_DIR</span><span class="o">=</span>build
+<span class="nb">export</span><span class="w"> </span><span class="nv">TARGET_C_COMPILER</span><span class="o">=</span>build-libc-tools/bin/clang
+<span class="nb">export</span><span class="w"> </span><span class="nv">TARGET_CXX_COMPILER</span><span class="o">=</span>build-libc-tools/bin/clang++
+</pre></div>
+</div>
+<p>Configure the target build:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>cmake<span class="w"> </span>-G<span class="w"> </span>Ninja<span class="w"> </span>-S<span class="w"> </span>runtimes<span class="w"> </span>-B<span class="w"> </span><span class="nv">$TARGET_BUILD_DIR</span><span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DLLVM_ENABLE_RUNTIMES<span class="o">=</span>libc<span class="w"> </span><span class="se">\</span>
+<span class="w">   </span>-DCMAKE_C_COMPILER<span class="o">=</span><span class="nv">$TARGET_C_COMPILER</span><span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>-DCMAKE_CXX_COMPILER<span class="o">=</span><span class="nv">$TARGET_CXX_COMPILER</span><span class="w">   </span><span class="se">\</span>
 <span class="w">   </span>-DLLVM_LIBC_FULL_BUILD<span class="o">=</span>ON<span class="w">                   </span><span class="se">\</span>
 <span class="w">   </span>-DLLVM_DEFAULT_TARGET_TRIPLE<span class="o">=</span><span class="nv">$TARGET_TRIPLE</span><span class="w"> </span><span class="se">\</span>
 <span class="w">   </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release
-$&gt;<span class="w"> </span>ninja<span class="w"> </span>install
+</pre></div>
+</div>
+<p>Build and install the target library:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>ninja<span class="w"> </span>-C<span class="w"> </span><span class="nv">$TARGET_BUILD_DIR</span><span class="w"> </span>install
 </pre></div>
 </div>
 <p>The above steps will result in a build targeting one of the supported GPU
@@ -454,7 +506,7 @@ invocations.</p>
 <h2>Build overview<a class="headerlink" href="#build-overview" title="Link to this heading">¶</a></h2>
 <p>Once installed, the GPU build will create several files used for different
 targets. This section will briefly describe their purpose.</p>
-<dl class="simple">
+<dl class="simple myst">
 <dt><strong>include/&lt;target-triple&gt;</strong></dt><dd><p>The include directory where all of the generated headers for the target will
 go. These definitions are strictly for the GPU when being targeted directly.</p>
 </dd>
@@ -503,7 +555,7 @@ be used to enable host services for anyone looking to interface with the
 control the GPU build of the C library. These options can be passed individually
 to each target using <code class="docutils literal notranslate"><span class="pre">-DRUNTIMES_&lt;target&gt;_&lt;variable&gt;=&lt;value&gt;</span></code> when using a
 standard runtime build.</p>
-<dl class="simple">
+<dl class="simple myst">
 <dt><strong>LLVM_LIBC_FULL_BUILD</strong>:BOOL</dt><dd><p>This flag controls whether or not the libc build will generate its own
 headers. This must always be on when targeting the GPU.</p>
 </dd>
@@ -519,8 +571,9 @@ option is not set and a GPU was not detected the tests will not be built.</p>
 commonly run out of resources if this is not constrained so it is recommended
 to keep it low. The default value is a single thread.</p>
 </dd>
-<dt><strong>LIBC_GPU_LOADER_EXECUTABLE</strong>:STRING</dt><dd><p>Overrides the default loader used for running GPU tests. If this is not
-provided the standard one will be built.</p>
+<dt><strong>CMAKE_CROSSCOMPILING_EMULATOR</strong>:STRING</dt><dd><p>Overrides the default loader used for running GPU tests. This is set
+automatically to <code class="docutils literal notranslate"><span class="pre">llvm-gpu-loader</span></code> for GPU runtime targets when building
+via the runtimes build.</p>
 </dd>
 </dl>
 </section>
@@ -583,8 +636,8 @@ provided the standard one will be built.</p>
             <ul>
 <li><a class="reference internal" href="#">Building libs for GPUs</a><ul>
 <li><a class="reference internal" href="#building-the-gpu-c-library">Building the GPU C library</a><ul>
-<li><a class="reference internal" href="#standard-runtimes-build">Standard runtimes build</a></li>
-<li><a class="reference internal" href="#runtimes-cross-build">Runtimes cross build</a></li>
+<li><a class="reference internal" href="#bootstrap-build">Bootstrap Build</a></li>
+<li><a class="reference internal" href="#two-stage-cross-compiler-build">Two-stage Cross-compiler Build</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#build-overview">Build overview</a></li>
@@ -601,9 +654,9 @@ provided the standard one will be built.</p>
     </aside>
   </div>
 </div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="module" src="../_static/scripts/furo.js?v=e16e2f1e"></script>
-    <script src="../_static/copybutton.js?v=487adb72"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js?v=972498a0"></script>
     </body>
 </html>
