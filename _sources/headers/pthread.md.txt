@@ -234,6 +234,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-missing:hover {
+  text-decoration: underline;
+  background: rgba(217, 119, 6, 0.22);
 }
 .hc-chip-impl {
   display: inline-block;
@@ -245,6 +250,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-impl:hover {
+  text-decoration: underline;
+  background: rgba(31, 136, 61, 0.22);
 }
 .hc-table-wrap {
   border: 1px solid var(--color-background-border, #e1e4e8);
@@ -263,7 +273,7 @@ body[data-theme="dark"] {
 .hc-table th {
   background: var(--color-background-secondary, #f6f8fa);
   border-bottom: 1px solid var(--color-background-border, #e1e4e8);
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -276,7 +286,7 @@ body[data-theme="dark"] {
   text-align: center;
 }
 .hc-table td {
-  padding: 9px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-background-border, #eaecef);
   vertical-align: middle;
 }
@@ -347,6 +357,25 @@ body[data-theme="dark"] {
   padding: 1px 6px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.hc-c-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-c-link:hover {
+  text-decoration: underline;
+  background: rgba(9, 105, 218, 0.16);
 }
 .hc-posix-link {
   display: inline-flex;
@@ -779,7 +808,6 @@ body[data-theme="dark"] {
            <th class="hc-center">Status</th>
            <th class="hc-center">C23 Section</th>
            <th class="hc-center">POSIX Docs</th>
-           <th>Target Availability</th>
          </tr>
        </thead>
        <tbody>
@@ -788,770 +816,660 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/__pthread_cleanup_pop.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">__pthread_cleanup_push</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/__pthread_cleanup_push.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_atfork</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_atfork.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getdetachstate</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getdetachstate.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getguardsize</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getguardsize.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getinheritsched</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getinheritsched.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getschedparam</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getschedparam.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getschedpolicy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getschedpolicy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getscope</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getscope.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getstack</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getstack.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_getstacksize</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_getstacksize.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setdetachstate</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setdetachstate.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setguardsize</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setguardsize.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setinheritsched</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setinheritsched.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setschedparam</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setschedparam.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setschedpolicy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setschedpolicy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setscope</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setscope.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setstack</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setstack.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_attr_setstacksize</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_attr_setstacksize.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrier_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrier_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrier_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrier_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrier_wait</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrier_wait.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrierattr_destroy</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrierattr_getpshared</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_getpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrierattr_init</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_barrierattr_setpshared</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_barrierattr_setpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cancel</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cancel.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_broadcast</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_broadcast.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_clockwait</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_clockwait.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_signal</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_signal.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_timedwait</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_timedwait.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_cond_wait</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_cond_wait.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_condattr_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_condattr_getclock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_getclock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_condattr_getpshared</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_getpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_condattr_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_condattr_setclock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_setclock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_condattr_setpshared</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_condattr_setpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_create</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_create.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_detach</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_detach.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_equal</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_equal.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_exit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_exit.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getattr_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getattr_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getcpuclockid</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getcpuclockid.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getname_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getname_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getschedparam</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getschedparam.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getspecific</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getspecific.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getstack_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getstack_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getthreadid_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getthreadid_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_getunique_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_getunique_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_join</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_join.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_key_create</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_key_create.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_key_delete</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_key_delete.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_clocklock</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_clocklock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_consistent</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_consistent.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_getprioceiling</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_getprioceiling.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_lock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_lock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_setprioceiling</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_setprioceiling.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_timedlock</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_timedlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_trylock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_trylock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutex_unlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutex_unlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_getprioceiling</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getprioceiling.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_getprotocol</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getprotocol.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_getpshared</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_getrobust</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_getrobust.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_gettype</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_gettype.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_setprioceiling</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setprioceiling.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_setprotocol</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setprotocol.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_setpshared</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_setrobust</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_setrobust.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_mutexattr_settype</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_mutexattr_settype.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_once</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_once.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_clockrdlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_clockrdlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_clockwrlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_clockwrlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_rdlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_rdlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_timedrdlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_timedrdlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_timedwrlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_timedwrlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_tryrdlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_tryrdlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_trywrlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_trywrlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_unlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_unlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlock_wrlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlock_wrlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlockattr_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlockattr_getkind_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_getkind_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlockattr_getpshared</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_getpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlockattr_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlockattr_setkind_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_setkind_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_rwlockattr_setpshared</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_rwlockattr_setpshared.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_self</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_self.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_setcancelstate</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setcancelstate.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_setcanceltype</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setcanceltype.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_setname_np</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setname_np.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_setschedparam</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setschedparam.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_setschedprio</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setschedprio.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_setspecific</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_setspecific.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_spin_destroy</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_destroy.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_spin_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_init.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_spin_lock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_lock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_spin_trylock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_trylock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_spin_unlock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_spin_unlock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pthread_testcancel</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/pthread_testcancel.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
        </tbody>
      </table>

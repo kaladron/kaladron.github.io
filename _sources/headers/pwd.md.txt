@@ -234,6 +234,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-missing:hover {
+  text-decoration: underline;
+  background: rgba(217, 119, 6, 0.22);
 }
 .hc-chip-impl {
   display: inline-block;
@@ -245,6 +250,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-impl:hover {
+  text-decoration: underline;
+  background: rgba(31, 136, 61, 0.22);
 }
 .hc-table-wrap {
   border: 1px solid var(--color-background-border, #e1e4e8);
@@ -263,7 +273,7 @@ body[data-theme="dark"] {
 .hc-table th {
   background: var(--color-background-secondary, #f6f8fa);
   border-bottom: 1px solid var(--color-background-border, #e1e4e8);
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -276,7 +286,7 @@ body[data-theme="dark"] {
   text-align: center;
 }
 .hc-table td {
-  padding: 9px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-background-border, #eaecef);
   vertical-align: middle;
 }
@@ -347,6 +357,25 @@ body[data-theme="dark"] {
   padding: 1px 6px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.hc-c-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-c-link:hover {
+  text-decoration: underline;
+  background: rgba(9, 105, 218, 0.16);
 }
 .hc-posix-link {
   display: inline-flex;
@@ -479,7 +508,6 @@ body[data-theme="dark"] {
            <th class="hc-center">Status</th>
            <th class="hc-center">C23 Section</th>
            <th class="hc-center">POSIX Docs</th>
-           <th>Target Availability</th>
          </tr>
        </thead>
        <tbody>
@@ -488,56 +516,48 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/endpwent.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getpwent</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwent.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getpwent_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwent_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getpwnam</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwnam.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getpwnam_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwnam_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getpwuid</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwuid.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getpwuid_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwuid_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">setpwent</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/setpwent.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
        </tbody>
      </table>

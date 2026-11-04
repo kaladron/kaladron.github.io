@@ -234,6 +234,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-missing:hover {
+  text-decoration: underline;
+  background: rgba(217, 119, 6, 0.22);
 }
 .hc-chip-impl {
   display: inline-block;
@@ -245,6 +250,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-impl:hover {
+  text-decoration: underline;
+  background: rgba(31, 136, 61, 0.22);
 }
 .hc-table-wrap {
   border: 1px solid var(--color-background-border, #e1e4e8);
@@ -263,7 +273,7 @@ body[data-theme="dark"] {
 .hc-table th {
   background: var(--color-background-secondary, #f6f8fa);
   border-bottom: 1px solid var(--color-background-border, #e1e4e8);
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -276,7 +286,7 @@ body[data-theme="dark"] {
   text-align: center;
 }
 .hc-table td {
-  padding: 9px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-background-border, #eaecef);
   vertical-align: middle;
 }
@@ -347,6 +357,25 @@ body[data-theme="dark"] {
   padding: 1px 6px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.hc-c-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-c-link:hover {
+  text-decoration: underline;
+  background: rgba(9, 105, 218, 0.16);
 }
 .hc-posix-link {
   display: inline-flex;
@@ -447,49 +476,49 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">atomic_bool</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_bool" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_char</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_char" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_flag</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_flag" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_int</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_int" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_llong</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_llong" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_long</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_long" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_size_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_size_t" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">memory_order</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/memory_order" title="C23 section 7.17 on cppreference.com">7.17 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
        </tbody>
@@ -514,55 +543,55 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">ATOMIC_BOOL_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_BOOL_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_CHAR_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_CHAR_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_FLAG_INIT</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.8</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_FLAG_INIT" title="C23 section 7.17.8 on cppreference.com">7.17.8 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_INT_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_INT_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_LLONG_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_LLONG_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_LONG_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_LONG_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_POINTER_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_POINTER_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_SHORT_LOCK_FREE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_SHORT_LOCK_FREE" title="C23 section 7.17.5 on cppreference.com">7.17.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ATOMIC_VAR_INIT</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.2.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/ATOMIC_VAR_INIT" title="C23 section 7.17.2.1 on cppreference.com">7.17.2.1 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
        </tbody>
@@ -581,205 +610,176 @@ body[data-theme="dark"] {
            <th class="hc-center">Status</th>
            <th class="hc-center">C23 Section</th>
            <th class="hc-center">POSIX Docs</th>
-           <th>Target Availability</th>
          </tr>
        </thead>
        <tbody>
          <tr>
            <td><code class="hc-sym">atomic_compare_exchange_strong</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_compare_exchange_strong" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_compare_exchange_strong_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_compare_exchange_strong_explicit" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_compare_exchange_weak</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_compare_exchange_weak" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_compare_exchange_weak_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_compare_exchange_weak_explicit" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_exchange</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_exchange" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_exchange_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_exchange_explicit" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_add</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_add" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_add_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_add_explicit" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_and</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_and" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_and_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_and_explicit" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_or</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_or" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_or_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_or_explicit" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_sub</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_sub" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_sub_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_sub_explicit" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_xor</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_xor" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_fetch_xor_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.7.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_fetch_xor_explicit" title="C23 section 7.17.7.5 on cppreference.com">7.17.7.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_flag_clear</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.8.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_flag_clear" title="C23 section 7.17.8.2 on cppreference.com">7.17.8.2 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_flag_clear_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.8.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_flag_clear_explicit" title="C23 section 7.17.8.2 on cppreference.com">7.17.8.2 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_flag_test_and_set</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.8.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_flag_test_and_set" title="C23 section 7.17.8.1 on cppreference.com">7.17.8.1 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_flag_test_and_set_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.8.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_flag_test_and_set_explicit" title="C23 section 7.17.8.1 on cppreference.com">7.17.8.1 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_init</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.2.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_init" title="C23 section 7.17.2.2 on cppreference.com">7.17.2.2 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_is_lock_free</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.5.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_is_lock_free" title="C23 section 7.17.5.1 on cppreference.com">7.17.5.1 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_load</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_load" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_load_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_load_explicit" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_signal_fence</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_signal_fence" title="C23 section 7.17.4 on cppreference.com">7.17.4 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_store</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_store" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_store_explicit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_store_explicit" title="C23 section 7.17.3 on cppreference.com">7.17.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atomic_thread_fence</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.17.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/atomic/atomic_thread_fence" title="C23 section 7.17.4 on cppreference.com">7.17.4 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
        </tbody>
      </table>

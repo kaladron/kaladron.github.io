@@ -637,6 +637,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-missing:hover {
+  text-decoration: underline;
+  background: rgba(217, 119, 6, 0.22);
 }
 .hc-chip-impl {
   display: inline-block;
@@ -648,6 +653,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-impl:hover {
+  text-decoration: underline;
+  background: rgba(31, 136, 61, 0.22);
 }
 .hc-table-wrap {
   border: 1px solid var(--color-background-border, #e1e4e8);
@@ -666,7 +676,7 @@ body[data-theme="dark"] {
 .hc-table th {
   background: var(--color-background-secondary, #f6f8fa);
   border-bottom: 1px solid var(--color-background-border, #e1e4e8);
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -679,7 +689,7 @@ body[data-theme="dark"] {
   text-align: center;
 }
 .hc-table td {
-  padding: 9px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-background-border, #eaecef);
   vertical-align: middle;
 }
@@ -750,6 +760,25 @@ body[data-theme="dark"] {
   padding: 1px 6px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.hc-c-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-c-link:hover {
+  text-decoration: underline;
+  background: rgba(9, 105, 218, 0.16);
 }
 .hc-posix-link {
   display: inline-flex;
@@ -904,7 +933,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cabs" title="C23 section 7.3.8.1 on cppreference.com">7.3.8.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cabs.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -923,7 +952,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cacos" title="C23 section 7.3.5.1 on cppreference.com">7.3.5.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacos.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -942,7 +971,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cacosh" title="C23 section 7.3.6.1 on cppreference.com">7.3.6.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacosh.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -961,7 +990,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/carg" title="C23 section 7.3.9.1 on cppreference.com">7.3.9.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/carg.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -980,7 +1009,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/casin" title="C23 section 7.3.5.2 on cppreference.com">7.3.5.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casin.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -999,7 +1028,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/casinh" title="C23 section 7.3.6.2 on cppreference.com">7.3.6.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinh.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1018,7 +1047,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/catan" title="C23 section 7.3.5.3 on cppreference.com">7.3.5.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catan.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1037,7 +1066,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/catanh" title="C23 section 7.3.6.3 on cppreference.com">7.3.6.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanh.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1056,7 +1085,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/ccos" title="C23 section 7.3.5.4 on cppreference.com">7.3.5.4 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccos.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1075,7 +1104,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/ccosh" title="C23 section 7.3.6.4 on cppreference.com">7.3.6.4 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccosh.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1094,7 +1123,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cexp" title="C23 section 7.3.7.1 on cppreference.com">7.3.7.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cexp.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1113,7 +1142,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cimag" title="C23 section 7.3.9.2 on cppreference.com">7.3.9.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cimag.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1132,7 +1161,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/clog" title="C23 section 7.3.7.2 on cppreference.com">7.3.7.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clog.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1151,7 +1180,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/conj" title="C23 section 7.3.9.4 on cppreference.com">7.3.9.4 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/conj.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1170,7 +1199,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cpow" title="C23 section 7.3.8.2 on cppreference.com">7.3.8.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cpow.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1189,7 +1218,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cproj" title="C23 section 7.3.9.5 on cppreference.com">7.3.9.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cproj.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1208,7 +1237,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/creal" title="C23 section 7.3.9.6 on cppreference.com">7.3.9.6 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/creal.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1227,7 +1256,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/csin" title="C23 section 7.3.5.5 on cppreference.com">7.3.5.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csin.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1246,7 +1275,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/csinh" title="C23 section 7.3.6.5 on cppreference.com">7.3.6.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinh.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1265,7 +1294,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/csqrt" title="C23 section 7.3.8.3 on cppreference.com">7.3.8.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csqrt.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1284,7 +1313,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/ctan" title="C23 section 7.3.5.6 on cppreference.com">7.3.5.6 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctan.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -1303,7 +1332,7 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-na" title="Not applicable">N/A</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/ctanh" title="C23 section 7.3.6.6 on cppreference.com">7.3.6.6 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanh.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
        </tbody>
@@ -1325,19 +1354,19 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">cfloat128</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cfloat128" title="C23 section 7.3 on cppreference.com">7.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/complex.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">cfloat16</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/cfloat16" title="C23 section 7.3 on cppreference.com">7.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/complex.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">float128</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/float128" title="C23 section 7.3 on cppreference.com">7.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/complex.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
        </tbody>
@@ -1371,13 +1400,13 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">CMPLXF128</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/CMPLXF128" title="C23 section 7.3 on cppreference.com">7.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">CMPLXF16</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/complex/CMPLXF16" title="C23 section 7.3 on cppreference.com">7.3 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
@@ -1403,793 +1432,6 @@ body[data-theme="dark"] {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/complex.h.html">POSIX.1-2024 &#8599;</a></td>
-         </tr>
-       </tbody>
-     </table>
-   </div></section>
-<section id="functions">
-<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
-   <div class="hc-table-wrap">
-     <table class="hc-table">
-       <thead>
-         <tr>
-           <th>Function</th>
-           <th class="hc-center">Status</th>
-           <th class="hc-center">C23 Section</th>
-           <th class="hc-center">POSIX Docs</th>
-           <th>Target Availability</th>
-         </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <td><code class="hc-sym">cabs</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cabs.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cabsf</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cabsf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cabsf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cabsf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cabsf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cabsf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cabsl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cabsl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacos</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacos.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacosf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacosf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacosf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacosf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacosf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacosf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacosh</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacosh.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacoshf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacoshf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacoshf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacoshf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacoshf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacoshf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacoshl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacoshl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cacosl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cacosl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">carg</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/carg.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cargf</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cargf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cargf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cargf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cargf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cargf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cargl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cargl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casin</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casin.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinh</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinh.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinhf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinhf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinhf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinhf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinhf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinhf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinhl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinhl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">casinl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/casinl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catan</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catan.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanh</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanh.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanhf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanhf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanhf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanhf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanhf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanhf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanhl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanhl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">catanl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/catanl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccos</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccos.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccosf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccosf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccosf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccosf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccosf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccosf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccosh</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccosh.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccoshf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccoshf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccoshf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccoshf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccoshf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccoshf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccoshl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccoshl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ccosl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ccosl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cexp</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cexp.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cexpf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cexpf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cexpf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cexpf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cexpf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cexpf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cexpl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.1</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cexpl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cimag</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cimag.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cimagf</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cimagf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cimagf128</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cimagf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cimagf16</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cimagf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cimagl</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cimagl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">clog</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clog.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">clogf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clogf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">clogf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clogf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">clogf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clogf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">clogl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.7.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clogl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">conj</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/conj.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">conjf</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/conjf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">conjf128</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/conjf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">conjf16</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/conjf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">conjl</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.4</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/conjl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cpow</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cpow.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cpowf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cpowf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cpowf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cpowf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cpowf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cpowf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cpowl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.2</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cpowl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cproj</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cproj.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cprojf</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cprojf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cprojf128</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cprojf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cprojf16</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cprojf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">cprojl</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/cprojl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">creal</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/creal.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">crealf</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/crealf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">crealf128</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/crealf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">crealf16</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/crealf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">creall</code></td>
-           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.9.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/creall.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csin</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csin.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinh</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinh.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinhf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinhf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinhf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinhf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinhf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinhf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinhl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinhl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csinl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.5</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csinl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csqrt</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csqrt.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csqrtf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csqrtf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csqrtf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csqrtf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csqrtf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csqrtf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">csqrtl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.8.3</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/csqrtl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctan</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctan.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanh</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanh.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanhf</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanhf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanhf128</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanhf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanhf16</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanhf16.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanhl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.6.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanhl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
-         </tr>
-         <tr>
-           <td><code class="hc-sym">ctanl</code></td>
-           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.3.5.6</span></td>
-           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctanl.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
        </tbody>
      </table>
@@ -2256,7 +1498,6 @@ body[data-theme="dark"] {
 <li><a class="reference internal" href="#base-function-families-precisions">Base Function Families &amp; Precisions</a></li>
 <li><a class="reference internal" href="#types">Types</a></li>
 <li><a class="reference internal" href="#macros">Macros</a></li>
-<li><a class="reference internal" href="#functions">Functions</a></li>
 </ul>
 </li>
 </ul>

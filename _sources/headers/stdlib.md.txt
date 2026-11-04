@@ -234,6 +234,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-missing:hover {
+  text-decoration: underline;
+  background: rgba(217, 119, 6, 0.22);
 }
 .hc-chip-impl {
   display: inline-block;
@@ -245,6 +250,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-impl:hover {
+  text-decoration: underline;
+  background: rgba(31, 136, 61, 0.22);
 }
 .hc-table-wrap {
   border: 1px solid var(--color-background-border, #e1e4e8);
@@ -263,7 +273,7 @@ body[data-theme="dark"] {
 .hc-table th {
   background: var(--color-background-secondary, #f6f8fa);
   border-bottom: 1px solid var(--color-background-border, #e1e4e8);
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -276,7 +286,7 @@ body[data-theme="dark"] {
   text-align: center;
 }
 .hc-table td {
-  padding: 9px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-background-border, #eaecef);
   vertical-align: middle;
 }
@@ -347,6 +357,25 @@ body[data-theme="dark"] {
   padding: 1px 6px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.hc-c-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-c-link:hover {
+  text-decoration: underline;
+  background: rgba(9, 105, 218, 0.16);
 }
 .hc-posix-link {
   display: inline-flex;
@@ -452,79 +481,79 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">__atexithandler_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">__qsortcompare_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">__qsortrcompare_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">__search_compare_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">constraint_handler_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">div_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">errno_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ldiv_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">lldiv_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">locale_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">rsize_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">size_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">wchar_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
        </tbody>
@@ -549,19 +578,19 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">EXIT_FAILURE</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">EXIT_SUCCESS</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">MB_CUR_MAX</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
@@ -573,13 +602,13 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">RAND_MAX</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/stdlib.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">__STDC_VERSION_STDLIB_H__</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
        </tbody>
@@ -598,513 +627,440 @@ body[data-theme="dark"] {
            <th class="hc-center">Status</th>
            <th class="hc-center">C23 Section</th>
            <th class="hc-center">POSIX Docs</th>
-           <th>Target Availability</th>
          </tr>
        </thead>
        <tbody>
          <tr>
            <td><code class="hc-sym">_Exit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/_Exit" title="C23 section 7.24.4.5 on cppreference.com">7.24.4.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/_Exit.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">a64l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/a64l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">abort</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/abort" title="C23 section 7.24.4.1 on cppreference.com">7.24.4.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/abort.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">abs</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.6.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/math/abs" title="C23 section 7.24.6.1 on cppreference.com">7.24.6.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/abs.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">aligned_alloc</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/aligned_alloc" title="C23 section 7.24.3.1 on cppreference.com">7.24.3.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/aligned_alloc.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">at_quick_exit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/at_quick_exit" title="C23 section 7.24.4.3 on cppreference.com">7.24.4.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/at_quick_exit.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atexit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/atexit" title="C23 section 7.24.4.2 on cppreference.com">7.24.4.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/atexit.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atof</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/atof" title="C23 section 7.24.1.1 on cppreference.com">7.24.1.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/atof.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atoi</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/atoi" title="C23 section 7.24.1.2 on cppreference.com">7.24.1.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/atoi.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atol</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/atol" title="C23 section 7.24.1.2 on cppreference.com">7.24.1.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/atol.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">atoll</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/atoll" title="C23 section 7.24.1.2 on cppreference.com">7.24.1.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/atoll.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">bsearch</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.5.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/algorithm/bsearch" title="C23 section 7.24.5.1 on cppreference.com">7.24.5.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/bsearch.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">calloc</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/calloc" title="C23 section 7.24.3.2 on cppreference.com">7.24.3.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/calloc.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64, x86_64">darwin (2)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clearenv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clearenv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">div</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.6.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/math/div" title="C23 section 7.24.6.2 on cppreference.com">7.24.6.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/div.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">exit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/exit" title="C23 section 7.24.4.4 on cppreference.com">7.24.4.4 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/exit.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">free</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/free" title="C23 section 7.24.3.3 on cppreference.com">7.24.3.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/free.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">free_aligned_sized</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/free_aligned_sized" title="C23 section 7.24.3.5 on cppreference.com">7.24.3.5 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">free_sized</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/free_sized" title="C23 section 7.24.3.4 on cppreference.com">7.24.3.4 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getenv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/getenv" title="C23 section 7.24.4.6 on cppreference.com">7.24.4.6 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getenv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getloadavg</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getloadavg.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">labs</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.6.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/math/abs" title="C23 section 7.24.6.1 on cppreference.com">7.24.6.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/labs.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ldiv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.6.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/math/div" title="C23 section 7.24.6.2 on cppreference.com">7.24.6.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ldiv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">llabs</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.6.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/math/abs" title="C23 section 7.24.6.1 on cppreference.com">7.24.6.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/llabs.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">lldiv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.6.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/math/div" title="C23 section 7.24.6.2 on cppreference.com">7.24.6.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/lldiv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">malloc</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/malloc" title="C23 section 7.24.3.6 on cppreference.com">7.24.3.6 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/malloc.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mblen</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.7.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/multibyte/mblen" title="C23 section 7.24.7.1 on cppreference.com">7.24.7.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mblen.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mbstowcs</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.8.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/multibyte/mbstowcs" title="C23 section 7.24.8.1 on cppreference.com">7.24.8.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mbstowcs.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mbtowc</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.7.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/multibyte/mbtowc" title="C23 section 7.24.7.2 on cppreference.com">7.24.7.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mbtowc.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">memalignment</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.9.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.9.1 on cppreference.com">7.24.9.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/memalignment.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mkdtemp</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mkdtemp.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mkostemp</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mkostemp.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mkstemp</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mkstemp.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">posix_memalign</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/posix_memalign.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">putenv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/putenv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">qsort</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.5.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/algorithm/qsort" title="C23 section 7.24.5.2 on cppreference.com">7.24.5.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/qsort.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">qsort_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/qsort_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, arm, riscv, x86_64">linux (4)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">quick_exit</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.7</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/quick_exit" title="C23 section 7.24.4.7 on cppreference.com">7.24.4.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/quick_exit.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">rand</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.2.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/random/rand" title="C23 section 7.24.2.1 on cppreference.com">7.24.2.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/rand.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">realloc</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.3.7</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/memory/realloc" title="C23 section 7.24.3.7 on cppreference.com">7.24.3.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/realloc.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64, x86_64">darwin (2)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">realpath</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/realpath.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">secure_getenv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/secure_getenv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">setenv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/setenv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">srand</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.2.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/numeric/random/srand" title="C23 section 7.24.2.2 on cppreference.com">7.24.2.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/srand.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="darwin: aarch64">darwin-aarch64</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfromd</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strfromd" title="C23 section 7.24.1.3 on cppreference.com">7.24.1.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strfromd.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfromd128</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.1.4 on cppreference.com">7.24.1.4 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfromd32</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.1.4 on cppreference.com">7.24.1.4 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfromd64</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.1.4 on cppreference.com">7.24.1.4 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfromf</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strfromf" title="C23 section 7.24.1.3 on cppreference.com">7.24.1.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strfromf.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfromf128</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strfromf128.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strfroml</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strfroml" title="C23 section 7.24.1.3 on cppreference.com">7.24.1.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strfroml.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtod</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtod" title="C23 section 7.24.1.5 on cppreference.com">7.24.1.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtod.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtod128</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.1.6 on cppreference.com">7.24.1.6 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtod32</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.1.6 on cppreference.com">7.24.1.6 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtod64</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.6</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24.1.6 on cppreference.com">7.24.1.6 &#8599;</a></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtod_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtod_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtof</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtof" title="C23 section 7.24.1.5 on cppreference.com">7.24.1.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtof.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtof_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtof_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtol</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.7</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtol" title="C23 section 7.24.1.7 on cppreference.com">7.24.1.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtol.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtol_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtol_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtold</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtold" title="C23 section 7.24.1.5 on cppreference.com">7.24.1.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtold.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtold_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtold_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtoll</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.7</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtoll" title="C23 section 7.24.1.7 on cppreference.com">7.24.1.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtoll.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtoll_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtoll_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtoul</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.7</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtoul" title="C23 section 7.24.1.7 on cppreference.com">7.24.1.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtoul.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtoul_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtoul_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtoull</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.1.7</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/byte/strtoull" title="C23 section 7.24.1.7 on cppreference.com">7.24.1.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtoull.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal-aarch64, baremetal-arm, baremetal-riscv, darwin-aarch64, darwin-x86_64, gpu-amdgpu, gpu-nvptx, linux-aarch64, linux-arm, linux-riscv, linux-x86_64, windows-x86_64" style="color:var(--hc-green-text);border-color:var(--hc-chip-impl-border);background:var(--hc-chip-impl-bg);">All 12 targets</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strtoull_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/header/stdlib" title="C23 section 7.24 on cppreference.com">7.24 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strtoull_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">system</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.4.8</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/system" title="C23 section 7.24.4.8 on cppreference.com">7.24.4.8 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/system.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">unsetenv</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/unsetenv.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">wcstombs</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.8.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/multibyte/wcstombs" title="C23 section 7.24.8.2 on cppreference.com">7.24.8.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcstombs.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">wctomb</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.24.7.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/multibyte/wctomb" title="C23 section 7.24.7.3 on cppreference.com">7.24.7.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wctomb.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
        </tbody>
      </table>

@@ -637,6 +637,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-missing:hover {
+  text-decoration: underline;
+  background: rgba(217, 119, 6, 0.22);
 }
 .hc-chip-impl {
   display: inline-block;
@@ -648,6 +653,11 @@ body[data-theme="dark"] {
   margin: 2px;
   font-family: monospace;
   font-size: 0.76rem;
+  text-decoration: none;
+}
+a.hc-chip-impl:hover {
+  text-decoration: underline;
+  background: rgba(31, 136, 61, 0.22);
 }
 .hc-table-wrap {
   border: 1px solid var(--color-background-border, #e1e4e8);
@@ -666,7 +676,7 @@ body[data-theme="dark"] {
 .hc-table th {
   background: var(--color-background-secondary, #f6f8fa);
   border-bottom: 1px solid var(--color-background-border, #e1e4e8);
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -679,7 +689,7 @@ body[data-theme="dark"] {
   text-align: center;
 }
 .hc-table td {
-  padding: 9px 14px;
+  padding: 8px 10px;
   border-bottom: 1px solid var(--color-background-border, #eaecef);
   vertical-align: middle;
 }
@@ -750,6 +760,25 @@ body[data-theme="dark"] {
   padding: 1px 6px;
   border-radius: 4px;
   white-space: nowrap;
+}
+.hc-c-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--hc-blue-text);
+  background: var(--hc-pill-c23-bg);
+  border: 1px solid var(--hc-pill-c23-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.hc-c-link:hover {
+  text-decoration: underline;
+  background: rgba(9, 105, 218, 0.16);
 }
 .hc-posix-link {
   display: inline-flex;
@@ -836,9 +865,9 @@ body[data-theme="dark"] {
        <div class="hc-progress-track" role="progressbar" aria-label="time.h Types completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-purple-bar); width: 100.0%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
-       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Objects</div>
+       <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Global Variables</div>
        <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">3 / 4 <span style="font-size: 0.75em; color: var(--hc-amber-text);">(75.0%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="time.h Objects completion" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-amber-bar); width: 75.0%; height: 100%;"></div></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="time.h Global Variables completion" aria-valuenow="75.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-amber-bar); width: 75.0%; height: 100%;"></div></div>
      </div>
 </div></section>
 <section id="types">
@@ -857,97 +886,97 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">clock_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/clock_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clockid_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/clockid_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">errno_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/errno_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">locale_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/locale_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">pid_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/pid_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">rsize_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/rsize_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">size_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/size_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">struct itimerspec</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/struct itimerspec" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">struct timespec</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/struct timespec" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">struct timeval</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/struct timeval" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">struct tm</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/struct tm" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">time_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/time_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timer_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/timer_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">tm_gmtoff_t</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/tm_gmtoff_t" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
        </tbody>
      </table>
    </div></section>
-<section id="objects-and-variables">
-<h2>Objects and Variables<a class="headerlink" href="#objects-and-variables" title="Link to this heading">¶</a></h2>
+<section id="global-variables">
+<h2>Global Variables<a class="headerlink" href="#global-variables" title="Link to this heading">¶</a></h2>
    <div class="hc-table-wrap">
      <table class="hc-table">
        <thead>
          <tr>
-           <th>Object</th>
+           <th>Global Variable</th>
            <th class="hc-center">Status</th>
            <th class="hc-center">C23 Section</th>
            <th class="hc-center">POSIX Docs</th>
@@ -957,25 +986,25 @@ body[data-theme="dark"] {
          <tr>
            <td><code class="hc-sym">daylight</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/daylight" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getdate_err</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/getdate_err" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timezone</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/timezone" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">tzname</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/tzname" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/time.h.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
        </tbody>
@@ -1025,212 +1054,182 @@ body[data-theme="dark"] {
            <th class="hc-center">Status</th>
            <th class="hc-center">C23 Section</th>
            <th class="hc-center">POSIX Docs</th>
-           <th>Target Availability</th>
          </tr>
        </thead>
        <tbody>
          <tr>
            <td><code class="hc-sym">asctime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/asctime" title="C23 section 7.27.2.1 on cppreference.com">7.27.2.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/asctime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">asctime_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/asctime_r" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/asctime_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clock</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.1</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/clock" title="C23 section 7.27.2.1 on cppreference.com">7.27.2.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clock_getcpuclockid</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_getcpuclockid.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clock_getres</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_getres.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clock_gettime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_gettime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clock_nanosleep</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_nanosleep.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">clock_settime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/clock_settime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ctime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/ctime" title="C23 section 7.27.2.2 on cppreference.com">7.27.2.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">ctime_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/ctime_r" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/ctime_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">difftime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.2</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/difftime" title="C23 section 7.27.2.2 on cppreference.com">7.27.2.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/difftime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">getdate</code></td>
            <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getdate.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-status-no" aria-label="No target entrypoints">&ndash;</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">gmtime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/gmtime" title="C23 section 7.27.2.3 on cppreference.com">7.27.2.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">gmtime_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/gmtime_r" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">localtime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/localtime" title="C23 section 7.27.2.4 on cppreference.com">7.27.2.4 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/localtime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">localtime_r</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/localtime_r" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/localtime_r.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">mktime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.3</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/mktime" title="C23 section 7.27.2.3 on cppreference.com">7.27.2.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mktime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">nanosleep</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/nanosleep.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strftime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.3.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/strftime" title="C23 section 7.27.3.5 on cppreference.com">7.27.3.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strftime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strftime_l</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/strftime_l" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strftime_l.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: riscv, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">strptime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.29</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/strptime" title="C23 section 7.29 on cppreference.com">7.29 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/strptime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, x86_64">linux (2)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">time</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.4</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/time" title="C23 section 7.27.2.4 on cppreference.com">7.27.2.4 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/time.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span><span class="hc-plat-pill" title="windows: x86_64">windows-x86_64</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timer_create</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_create.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timer_delete</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_delete.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timer_getoverrun</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_getoverrun.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timer_gettime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_gettime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timer_settime</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timer_settime.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">timespec_get</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
-           <td class="hc-center"><span class="hc-sec-badge">7.27.2.5</span></td>
+           <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/chrono/timespec_get" title="C23 section 7.27.2.5 on cppreference.com">7.27.2.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/timespec_get.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="baremetal: aarch64, arm, riscv">baremetal (3)</span><span class="hc-plat-pill" title="gpu: amdgpu, nvptx">gpu (2)</span><span class="hc-plat-pill" title="linux: aarch64, riscv, x86_64">linux (3)</span></td>
          </tr>
          <tr>
            <td><code class="hc-sym">tzset</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/tzset.html">POSIX.1-2024 &#8599;</a></td>
-           <td><span class="hc-plat-pill" title="linux: aarch64, x86_64">linux (2)</span></td>
          </tr>
        </tbody>
      </table>
@@ -1295,7 +1294,7 @@ body[data-theme="dark"] {
 <li><a class="reference internal" href="#">time.h</a><ul>
 <li><a class="reference internal" href="#summary">Summary</a></li>
 <li><a class="reference internal" href="#types">Types</a></li>
-<li><a class="reference internal" href="#objects-and-variables">Objects and Variables</a></li>
+<li><a class="reference internal" href="#global-variables">Global Variables</a></li>
 <li><a class="reference internal" href="#macros">Macros</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 </ul>
