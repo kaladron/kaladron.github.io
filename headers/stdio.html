@@ -846,13 +846,13 @@ a.hc-chip-impl:hover {
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">POSIX.1-2024</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">92 / 102 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(90.2%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="stdio.h POSIX.1-2024 completion" aria-valuenow="90.2" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 90.2%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">92 / 104 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(88.5%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="stdio.h POSIX.1-2024 completion" aria-valuenow="88.5" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 88.5%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Functions</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">66 / 75 <span style="font-size: 0.75em; color: var(--hc-green-text);">(88.0%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="stdio.h Functions completion" aria-valuenow="88.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 88.0%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">66 / 77 <span style="font-size: 0.75em; color: var(--hc-green-text);">(85.7%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="stdio.h Functions completion" aria-valuenow="85.7" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 85.7%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Macros</div>
@@ -1370,6 +1370,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/open_memstream.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">open_wmemstream</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/open_wmemstream.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">pclose</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -1482,6 +1488,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/io/sscanf" title="C23 section 7.23.6.7 on cppreference.com">7.23.6.7 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sscanf.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tempnam</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/tempnam.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">tmpfile</code></td>

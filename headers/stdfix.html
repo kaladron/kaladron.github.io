@@ -841,13 +841,13 @@ a.hc-chip-impl:hover {
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 20px;">
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Functions</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">87 / 88 <span style="font-size: 0.75em; color: var(--hc-green-text);">(98.9%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Functions completion" aria-valuenow="98.9" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 98.9%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">87 / 172 <span style="font-size: 0.75em; color: var(--hc-green-text);">(50.6%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Functions completion" aria-valuenow="50.6" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 50.6%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Macros</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">3 / 3 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(100.0%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Macros completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 100.0%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">56 / 60 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(93.3%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Macros completion" aria-valuenow="93.3" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 93.3%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Types</div>
@@ -957,6 +957,324 @@ a.hc-chip-impl:hover {
        </thead>
        <tbody>
          <tr>
+           <td><code class="hc-sym">ACCUM_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ACCUM_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ACCUM_IBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ACCUM_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ACCUM_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">FRACT_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">FRACT_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">FRACT_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">FRACT_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LACCUM_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LACCUM_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LACCUM_IBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LACCUM_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LACCUM_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LFRACT_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LFRACT_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LFRACT_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">LFRACT_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SACCUM_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SACCUM_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SACCUM_IBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SACCUM_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SACCUM_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SFRACT_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SFRACT_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SFRACT_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">SFRACT_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UACCUM_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UACCUM_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UACCUM_IBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UACCUM_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UACCUM_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UFRACT_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UFRACT_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UFRACT_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">UFRACT_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULACCUM_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULACCUM_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULACCUM_IBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULACCUM_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULACCUM_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULFRACT_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULFRACT_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">ULFRACT_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USACCUM_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USACCUM_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USACCUM_IBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USACCUM_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USACCUM_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USFRACT_EPSILON</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USFRACT_FBIT</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USFRACT_MAX</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">USFRACT_MIN</code></td>
+           <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">absfx</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -965,6 +1283,30 @@ a.hc-chip-impl:hover {
          <tr>
            <td><code class="hc-sym">countlsfx</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">divifx</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">fxdivi</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">idivfx</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">mulifx</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
@@ -1099,6 +1441,78 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">coshk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">coshr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">coslk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">coslr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosuhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosuhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosuk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">cosur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">countlshk</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -1225,8 +1639,68 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">exphr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">expk</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">explk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">explr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expuhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expuhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expuk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">expur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
@@ -1315,6 +1789,78 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">loghk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">loghr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">logk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">loglk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">loglr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">logr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">loguhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">loguhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">loguk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">logulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">logulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">logur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">lrbits</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -1323,6 +1869,54 @@ a.hc-chip-impl:hover {
          <tr>
            <td><code class="hc-sym">lrdivi</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">mulik</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">mulilk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">mulilr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">mulir</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">muliuk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">muliulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">muliulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">muliur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
@@ -1411,6 +2005,114 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">sinhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sink</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinlk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinlr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinuhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinuhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinuk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sinur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sqrthk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sqrthr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sqrtk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sqrtlk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sqrtlr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sqrtr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">sqrtuhk</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -1443,6 +2145,150 @@ a.hc-chip-impl:hover {
          <tr>
            <td><code class="hc-sym">sqrtur</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxlk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxlr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxuhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxuhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxuk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">strtofxur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tank</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanlk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanlr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanuhk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanuhr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanuk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanulk</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanulr</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">tanur</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>

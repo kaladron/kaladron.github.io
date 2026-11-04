@@ -846,13 +846,13 @@ a.hc-chip-impl:hover {
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">POSIX.1-2024</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">67 / 67 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(100.0%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="wchar.h POSIX.1-2024 completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 100.0%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">67 / 75 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(89.3%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="wchar.h POSIX.1-2024 completion" aria-valuenow="89.3" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 89.3%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Functions</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">58 / 73 <span style="font-size: 0.75em; color: var(--hc-green-text);">(79.5%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="wchar.h Functions completion" aria-valuenow="79.5" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 79.5%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">58 / 81 <span style="font-size: 0.75em; color: var(--hc-green-text);">(71.6%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="wchar.h Functions completion" aria-valuenow="71.6" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 71.6%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Macros</div>
@@ -1061,6 +1061,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/mbsrtowcs.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">open_wmemstream</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/open_wmemstream.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">putwc</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/io/putwc" title="C23 section 7.31.3.8 on cppreference.com">7.31.3.8 &#8599;</a></td>
@@ -1151,6 +1157,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcscasecmp.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">wcscasecmp_l</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcscasecmp_l.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">wcscat</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/wide/wcscat" title="C23 section 7.31.4.4.1 on cppreference.com">7.31.4.4.1 &#8599;</a></td>
@@ -1173,6 +1185,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/wide/wcscoll" title="C23 section 7.31.4.5.3 on cppreference.com">7.31.4.5.3 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcscoll.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">wcscoll_l</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcscoll_l.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">wcscpy</code></td>
@@ -1199,6 +1217,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">wcsftime_l</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcsftime_l.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">wcslcat</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/wide/wcslcat" title="C23 section 7.31 on cppreference.com">7.31 &#8599;</a></td>
@@ -1221,6 +1245,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcsncasecmp.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">wcsncasecmp_l</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcsncasecmp_l.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">wcsncat</code></td>
@@ -1349,16 +1379,34 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcstoull.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">wcswidth</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcswidth.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">wcsxfrm</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/wide/wcsxfrm" title="C23 section 7.31.4.5.5 on cppreference.com">7.31.4.5.5 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcsxfrm.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">wcsxfrm_l</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcsxfrm_l.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">wctob</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/string/multibyte/wctob" title="C23 section 7.31.6.2.2 on cppreference.com">7.31.6.2.2 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wctob.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">wcwidth</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/wcwidth.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">wmemchr</code></td>

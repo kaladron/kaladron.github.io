@@ -846,13 +846,13 @@ a.hc-chip-impl:hover {
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">POSIX.1-2024</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">67 / 67 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(100.0%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="signal.h POSIX.1-2024 completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 100.0%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">67 / 82 <span style="font-size: 0.75em; color: var(--hc-blue-text);">(81.7%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="signal.h POSIX.1-2024 completion" aria-valuenow="81.7" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-blue-bar); width: 81.7%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Functions</div>
-       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">15 / 15 <span style="font-size: 0.75em; color: var(--hc-green-text);">(100.0%)</span></div>
-       <div class="hc-progress-track" role="progressbar" aria-label="signal.h Functions completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 100.0%; height: 100%;"></div></div>
+       <div style="font-size: 1.25em; font-weight: 700; margin: 4px 0;">15 / 30 <span style="font-size: 0.75em; color: var(--hc-green-text);">(50.0%)</span></div>
+       <div class="hc-progress-track" role="progressbar" aria-label="signal.h Functions completion" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100" style="background: var(--hc-track-bg); border-radius: 4px; height: 6px; overflow: hidden;"><div class="hc-progress-fill" style="background: var(--hc-green-bar); width: 50.0%; height: 100%;"></div></div>
      </div>
      <div style="background: var(--color-background-secondary, #f8f9fa); border: 1px solid var(--color-background-border, #e9ecef); border-radius: 6px; padding: 12px;">
        <div style="font-weight: 600; font-size: 0.85em; color: var(--color-foreground-muted, #6c757d);">Macros</div>
@@ -1235,6 +1235,18 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/killpg.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">psiginfo</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/psiginfo.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">psignal</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/psignal.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">pthread_kill</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -1251,6 +1263,12 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><a class="hc-c-link" href="https://cppreference.com/c/program/raise" title="C23 section 7.14.2.1 on cppreference.com">7.14.2.1 &#8599;</a></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/raise.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sig2str</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sig2str.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
            <td><code class="hc-sym">sigaction</code></td>
@@ -1289,6 +1307,24 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigfillset.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">sighold</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sighold.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigignore</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigignore.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">siginterrupt</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/siginterrupt.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">sigismember</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
@@ -1301,16 +1337,70 @@ a.hc-chip-impl:hover {
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/signal.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">sigpause</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigpause.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigpending</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigpending.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">sigprocmask</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigprocmask.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
          <tr>
+           <td><code class="hc-sym">sigqueue</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigqueue.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigrelse</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigrelse.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigset</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigset.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
            <td><code class="hc-sym">sigsuspend</code></td>
            <td class="hc-center"><span class="hc-status-yes" role="img" aria-label="Implemented" title="Implemented"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z" fill="currentColor"/></svg></span></td>
            <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
            <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigsuspend.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigtimedwait</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigtimedwait.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigwait</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigwait.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">sigwaitinfo</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/sigwaitinfo.html">POSIX.1-2024 &#8599;</a></td>
+         </tr>
+         <tr>
+           <td><code class="hc-sym">str2sig</code></td>
+           <td class="hc-center"><span class="hc-status-no" role="img" aria-label="Not implemented" title="Not implemented">&ndash;</span></td>
+           <td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td>
+           <td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/str2sig.html">POSIX.1-2024 &#8599;</a></td>
          </tr>
        </tbody>
      </table>
