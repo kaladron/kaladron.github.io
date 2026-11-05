@@ -3,14 +3,15 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="monetary.h" href="../monetary.html"><link rel="prev" title="math.h" href="../math.html">
+<link rel="index" title="Index" href="../../genindex.html"><link rel="search" title="Search" href="../../search.html"><link rel="next" title="net/if.h" href="../net/if.html"><link rel="prev" title="math.h" href="index.html">
 
-    <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
+    <link rel="shortcut icon" href="../../_static/llvm_libc_logo.svg"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>Log/Log10/Log2 Algorithm - The LLVM C Library</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=69ba022a" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=4db3a74f" />
-    <link rel="stylesheet" type="text/css" href="../../_static/llvm-sphinx/copybutton.css?v=403646e9" />
+    <link rel="stylesheet" type="text/css" href="../../_static/llvm-sphinx/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?v=99069b78" />
+    <link rel="stylesheet" type="text/css" href="../../_static/status.css?v=9065224a" />
     
     
 
@@ -238,52 +239,29 @@
 <li class="toctree-l2"><a class="reference internal" href="../fcntl.html">fcntl.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../fenv.html">fenv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../float.html">float.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../fmtmsg.html">fmtmsg.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../fnmatch.html">fnmatch.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ftw.html">ftw.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../glob.html">glob.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../grp.html">grp.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../iconv.html">iconv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../inttypes.html">inttypes.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../iso646.html">iso646.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../langinfo.html">langinfo.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../libgen.html">libgen.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../limits.html">limits.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../locale.html">locale.h</a></li>
-<li class="toctree-l2 current has-children"><a class="reference internal" href="../math.html">math.h</a><input aria-label="Toggle navigation of math.h" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">math.h</a><input aria-label="Toggle navigation of math.h" checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Log/Log10/Log2 Algorithm</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../monetary.html">monetary.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../mqueue.html">mqueue.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ndbm.html">ndbm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../net/if.html">net/if.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../netdb.html">netdb.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../netinet/in.html">netinet/in.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../netinet/tcp.html">netinet/tcp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nl_types.html">nl_types.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../poll.html">poll.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../pthread.html">pthread.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pwd.html">pwd.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../regex.html">regex.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sched.html">sched.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../search.html">search.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../semaphore.html">semaphore.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../setjmp.html">setjmp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../signal.html">signal.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../spawn.html">spawn.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdalign.html">stdalign.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdarg.html">stdarg.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdatomic.html">stdatomic.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stdbit.html">stdbit.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdbool.html">stdbool.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdckdint.html">stdckdint.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stddef.html">stddef.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stdfix.html">stdfix.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdint.html">stdint.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stdio.html">stdio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../stdlib.html">stdlib.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../stdnoreturn.html">stdnoreturn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../string.html">string.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../strings.html">strings.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/ipc.html">sys/ipc.h</a></li>
@@ -292,31 +270,22 @@
 <li class="toctree-l2"><a class="reference internal" href="../sys/resource.html">sys/resource.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/select.html">sys/select.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/sem.html">sys/sem.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys/shm.html">sys/shm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/socket.html">sys/socket.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/stat.html">sys/stat.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/statvfs.html">sys/statvfs.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/time.html">sys/time.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys/times.html">sys/times.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys/types.html">sys/types.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/uio.html">sys/uio.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../sys/un.html">sys/un.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/utsname.html">sys/utsname.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../sys/wait.html">sys/wait.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../syslog.html">syslog.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tar.html">tar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../termios.html">termios.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../tgmath.html">tgmath.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../threads.html">threads.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../time.html">time.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../uchar.html">uchar.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ulimit.html">ulimit.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../unistd.html">unistd.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../utime.html">utime.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../utmpx.html">utmpx.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wchar.html">wchar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../wctype.html">wctype.h</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../wordexp.html">wordexp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pthread.html">pthread.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../arch_support.html">Architecture Support</a></li>
@@ -1028,16 +997,16 @@ table below:</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../monetary.html">
+          <a class="next-page" href="../net/if.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">monetary.h</div>
+                <div class="title">net/if.h</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../math.html">
+          <a class="prev-page" href="index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
@@ -1109,7 +1078,7 @@ table below:</p>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="module" src="../../_static/scripts/furo.js?v=e16e2f1e"></script>
-    <script src="../../_static/llvm-sphinx/copybutton.js?v=972498a0"></script>
+    <script src="../../_static/llvm-sphinx/copybutton.js"></script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     </body>
 </html>
