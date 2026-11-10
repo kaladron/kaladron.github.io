@@ -1,45 +1,51 @@
 # search.h
 
-## Types
+## Source Location
 
-```{raw} html
-<div class="hc-table-wrap"><table class="hc-table">
-  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
-  <tbody>
-    <tr id="type-ACTION"><td><code class="hc-sym">ACTION</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/search.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="type-ENTRY"><td><code class="hc-sym">ENTRY</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/search.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="type-VISIT"><td><code class="hc-sym">VISIT</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/search.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="type-posix_tnode"><td><code class="hc-sym">posix_tnode</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/search.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="type-size_t"><td><code class="hc-sym">size_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/search.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="type-struct-hsearch_data"><td><code class="hc-sym">struct hsearch_data</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-    <tr id="type-struct-qelem"><td><code class="hc-sym">struct qelem</code></td><td class="hc-center"><span class="hc-status-no" title="Not Implemented"><span aria-hidden="true">&ndash;</span><span class="hc-sr-only">Not Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-  </tbody>
-</table></div>
-```
+- The main source for search functions is located at:
+  `libc/src/search`.
+- Hashtable implementation is located at:
+  `libc/src/__support/HashTable`.
+- The tests are located at:
+  `libc/test/src/search/`.
 
-## Functions
+## Implementation Status
 
-```{raw} html
-<div class="hc-table-wrap"><table class="hc-table">
-  <thead><tr><th>Function</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
-  <tbody>
-    <tr id="function-hcreate"><td><code class="hc-sym">hcreate</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/hcreate.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-hcreate_r"><td><code class="hc-sym">hcreate_r</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-    <tr id="function-hdestroy"><td><code class="hc-sym">hdestroy</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/hdestroy.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-hdestroy_r"><td><code class="hc-sym">hdestroy_r</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-    <tr id="function-hsearch"><td><code class="hc-sym">hsearch</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/hsearch.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-hsearch_r"><td><code class="hc-sym">hsearch_r</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-    <tr id="function-insque"><td><code class="hc-sym">insque</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/insque.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-lfind"><td><code class="hc-sym">lfind</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/lfind.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-lsearch"><td><code class="hc-sym">lsearch</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/lsearch.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-remque"><td><code class="hc-sym">remque</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/remque.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-tdelete"><td><code class="hc-sym">tdelete</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/tdelete.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-tdestroy"><td><code class="hc-sym">tdestroy</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-    <tr id="function-tfind"><td><code class="hc-sym">tfind</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/tfind.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-tsearch"><td><code class="hc-sym">tsearch</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/tsearch.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-twalk"><td><code class="hc-sym">twalk</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/twalk.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
-    <tr id="function-twalk_r"><td><code class="hc-sym">twalk_r</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
-  </tbody>
-</table></div>
-```
+### POSIX Standard Types
+
+| Type Name | Available   |
+| --------- | ----------- |
+| ACTION    | {{ check }} |
+| ENTRY     | {{ check }} |
+| VISIT     | {{ check }} |
+
+### POSIX Standard Functions
+
+| Function Name | Available   |
+| ------------- | ----------- |
+| hcreate       | {{ check }} |
+| hdestroy      | {{ check }} |
+| hsearch       | {{ check }} |
+| insque        | {{ check }} |
+| lfind         | {{ check }} |
+| lsearch       | {{ check }} |
+| remque        | {{ check }} |
+| tdelete       |             |
+| tfind         |             |
+| tsearch       |             |
+| twalk         |             |
+
+### GNU Extension Functions
+
+| Function Name | Available   |
+| ------------- | ----------- |
+| hsearch_r     | {{ check }} |
+| hcreate_r     | {{ check }} |
+| hdestroy_r    | {{ check }} |
+| tdestroy      |             |
+| twalk_r       |             |
+
+### Standards
+
+search.h is specified in POSIX.1-200x (Portable Operating System Interface, Volume1: Base Specifications).
 
