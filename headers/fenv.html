@@ -9,7 +9,7 @@
         <title>fenv.h - The LLVM C Library</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=4db3a74f" />
-    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css?v=403646e9" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=99069b78" />
     <link rel="stylesheet" type="text/css" href="../_static/status.css?v=b7cd3726" />
     
@@ -374,6 +374,15 @@
         <article role="main" id="furo-main-content">
           <section id="fenv-h">
 <h1>fenv.h<a class="headerlink" href="#fenv-h" title="Link to this heading">¶</a></h1>
+<section id="types">
+<h2>Types<a class="headerlink" href="#types" title="Link to this heading">¶</a></h2>
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="type-fenv_t"><td><code class="hc-sym">fenv_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv" title="C23 section 7.6 on cppreference.com">7.6 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-fexcept_t"><td><code class="hc-sym">fexcept_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv" title="C23 section 7.6 on cppreference.com">7.6 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/fenv.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+  </tbody>
+</table></div></section>
 <section id="macros">
 <h2>Macros<a class="headerlink" href="#macros" title="Link to this heading">¶</a></h2>
 <div class="hc-table-wrap"><table class="hc-table">
@@ -408,7 +417,10 @@
     <tr id="function-fe_dec_getround"><td><code class="hc-sym">fe_dec_getround</code></td><td class="hc-center"><span class="hc-status-no" title="Not Implemented"><span aria-hidden="true">&ndash;</span><span class="hc-sr-only">Not Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv" title="C23 section 7.6.5.3 on cppreference.com">7.6.5.3 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
     <tr id="function-fe_dec_setround"><td><code class="hc-sym">fe_dec_setround</code></td><td class="hc-center"><span class="hc-status-no" title="Not Implemented"><span aria-hidden="true">&ndash;</span><span class="hc-sr-only">Not Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv" title="C23 section 7.6.5.6 on cppreference.com">7.6.5.6 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
     <tr id="function-feclearexcept"><td><code class="hc-sym">feclearexcept</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv/feexcept" title="C23 section 7.6.4.1 on cppreference.com">7.6.4.1 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/feclearexcept.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="function-fedisableexcept"><td><code class="hc-sym">fedisableexcept</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+    <tr id="function-feenableexcept"><td><code class="hc-sym">feenableexcept</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
     <tr id="function-fegetenv"><td><code class="hc-sym">fegetenv</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv/feenv" title="C23 section 7.6.6.1 on cppreference.com">7.6.6.1 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/fegetenv.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="function-fegetexcept"><td><code class="hc-sym">fegetexcept</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
     <tr id="function-fegetexceptflag"><td><code class="hc-sym">fegetexceptflag</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv/feexcept" title="C23 section 7.6.4.2 on cppreference.com">7.6.4.2 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/fegetexceptflag.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
     <tr id="function-fegetmode"><td><code class="hc-sym">fegetmode</code></td><td class="hc-center"><span class="hc-status-no" title="Not Implemented"><span aria-hidden="true">&ndash;</span><span class="hc-sr-only">Not Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv" title="C23 section 7.6.5.1 on cppreference.com">7.6.5.1 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
     <tr id="function-fegetround"><td><code class="hc-sym">fegetround</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/numeric/fenv/feround" title="C23 section 7.6.5.2 on cppreference.com">7.6.5.2 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/fegetround.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
@@ -482,6 +494,7 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">fenv.h</a><ul>
+<li><a class="reference internal" href="#types">Types</a></li>
 <li><a class="reference internal" href="#macros">Macros</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 </ul>
@@ -499,6 +512,6 @@
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="module" src="../_static/scripts/furo.js?v=e16e2f1e"></script>
-    <script src="../_static/llvm-sphinx/copybutton.js?v=972498a0"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js"></script>
     </body>
 </html>

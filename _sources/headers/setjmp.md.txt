@@ -1,5 +1,17 @@
 # setjmp.h
 
+## Types
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="type-jmp_buf"><td><code class="hc-sym">jmp_buf</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/program/jmp_buf" title="C23 section 7.13 on cppreference.com">7.13 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/setjmp.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-sigjmp_buf"><td><code class="hc-sym">sigjmp_buf</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/setjmp.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+  </tbody>
+</table></div>
+```
+
 ## Macros
 
 ```{raw} html

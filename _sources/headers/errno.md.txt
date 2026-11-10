@@ -1,5 +1,28 @@
 # errno.h
 
+## Types
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="type-errno_t"><td><code class="hc-sym">errno_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><a class="hc-c-link" href="https://en.cppreference.com/w/c/error" title="C23 section K.3.2 on cppreference.com">K.3.2 <span aria-hidden="true">&#8599;</span></a></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+  </tbody>
+</table></div>
+```
+
+## Global Variables
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Global Variable</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="object-program_invocation_name"><td><code class="hc-sym">program_invocation_name</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+    <tr id="object-program_invocation_short_name"><td><code class="hc-sym">program_invocation_short_name</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
+  </tbody>
+</table></div>
+```
+
 ## Macros
 
 ```{raw} html
