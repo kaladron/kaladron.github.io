@@ -168,13 +168,6 @@ body[data-theme="dark"] {
   outline-offset: 2px;
 }
 
-.hc-family-note {
-  font-size: 0.84rem;
-  line-height: 1.5;
-  color: var(--color-foreground-muted, #57606a);
-  margin: 4px 0 16px 0;
-}
-
 .hc-table-families th,
 .hc-table-families td {
   padding: 7px 8px;
