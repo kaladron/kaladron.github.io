@@ -316,6 +316,7 @@
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../math/index.html">Math Functions</a><input aria-label="Toggle navigation of Math Functions" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../math/log.html">Log/Log10/Log2 Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../math/stdfix.html">Fixed-Point Arithmetic</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../porting.html">Bringup on a New OS or Architecture</a></li>
@@ -375,6 +376,19 @@
         <article role="main" id="furo-main-content">
           <section id="spawn-h">
 <h1>spawn.h<a class="headerlink" href="#spawn-h" title="Link to this heading">¶</a></h1>
+<section id="types">
+<h2>Types<a class="headerlink" href="#types" title="Link to this heading">¶</a></h2>
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="type-mode_t"><td><code class="hc-sym">mode_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-pid_t"><td><code class="hc-sym">pid_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-posix_spawn_file_actions_t"><td><code class="hc-sym">posix_spawn_file_actions_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-posix_spawnattr_t"><td><code class="hc-sym">posix_spawnattr_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-sigset_t"><td><code class="hc-sym">sigset_t</code></td><td class="hc-center"><span class="hc-status-no" title="Not Implemented"><span aria-hidden="true">&ndash;</span><span class="hc-sr-only">Not Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-struct-sched_param"><td><code class="hc-sym">struct sched_param</code></td><td class="hc-center"><span class="hc-status-no" title="Not Implemented"><span aria-hidden="true">&ndash;</span><span class="hc-sr-only">Not Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/spawn.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+  </tbody>
+</table></div></section>
 <section id="macros">
 <h2>Macros<a class="headerlink" href="#macros" title="Link to this heading">¶</a></h2>
 <div class="hc-table-wrap"><table class="hc-table">
@@ -477,6 +491,7 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">spawn.h</a><ul>
+<li><a class="reference internal" href="#types">Types</a></li>
 <li><a class="reference internal" href="#macros">Macros</a></li>
 <li><a class="reference internal" href="#functions">Functions</a></li>
 </ul>

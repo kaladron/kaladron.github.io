@@ -1,5 +1,19 @@
 # pwd.h
 
+## Types
+
+```{raw} html
+<div class="hc-table-wrap"><table class="hc-table">
+  <thead><tr><th>Type</th><th class="hc-center">Status</th><th class="hc-center">C23 Section</th><th class="hc-center">POSIX Docs</th></tr></thead>
+  <tbody>
+    <tr id="type-gid_t"><td><code class="hc-sym">gid_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pwd.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-size_t"><td><code class="hc-sym">size_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pwd.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-struct-passwd"><td><code class="hc-sym">struct passwd</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pwd.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="type-uid_t"><td><code class="hc-sym">uid_t</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/pwd.h.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+  </tbody>
+</table></div>
+```
+
 ## Functions
 
 ```{raw} html
@@ -8,6 +22,7 @@
   <tbody>
     <tr id="function-endpwent"><td><code class="hc-sym">endpwent</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/endpwent.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
     <tr id="function-getpwent"><td><code class="hc-sym">getpwent</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwent.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
+    <tr id="function-getpwent_r"><td><code class="hc-sym">getpwent_r</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in POSIX">&ndash;</span></td></tr>
     <tr id="function-getpwnam"><td><code class="hc-sym">getpwnam</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwnam.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
     <tr id="function-getpwnam_r"><td><code class="hc-sym">getpwnam_r</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwnam_r.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
     <tr id="function-getpwuid"><td><code class="hc-sym">getpwuid</code></td><td class="hc-center"><span class="hc-status-yes" title="Implemented"><span aria-hidden="true">&#10003;</span><span class="hc-sr-only">Implemented</span></span></td><td class="hc-center"><span class="hc-status-no" aria-label="Not in C23">&ndash;</span></td><td class="hc-center"><a class="hc-posix-link" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/getpwuid.html">POSIX.1-2024 <span aria-hidden="true">&#8599;</span></a></td></tr>
