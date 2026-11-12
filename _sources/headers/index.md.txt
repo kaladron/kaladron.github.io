@@ -2,7 +2,7 @@
 
 (headers_index)=
 
-# Implementation Status
+# Headers
 
 Live symbol coverage across 82 headers (23 C23 standard headers, 76 POSIX.1-2024 headers, and extensions), verified directly against LLVM-libc source files, header generation specifications, and exported entrypoints.  Purely compiler-provided freestanding C headers (`iso646.h`, `stdalign.h`, `stdarg.h`, `stdatomic.h`, `stdbool.h`, `stddef.h`, `stdnoreturn.h`, and `tgmath.h`) come from the host compiler (`Clang` or `GCC`) rather than LLVM-libc and are omitted below.
 
