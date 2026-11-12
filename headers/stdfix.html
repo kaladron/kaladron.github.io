@@ -3,15 +3,15 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="stdio.h" href="stdio.html"><link rel="prev" title="stdbit.h" href="stdbit.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="stdint.h" href="stdint.html"><link rel="prev" title="stdckdint.h" href="stdckdint.html">
 
     <link rel="shortcut icon" href="../_static/llvm_libc_logo.svg"><!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
         <title>stdfix.h - The LLVM C Library</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=69ba022a" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=4db3a74f" />
-    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/llvm-sphinx/copybutton.css?v=403646e9" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=99069b78" />
-    <link rel="stylesheet" type="text/css" href="../_static/status.css?v=9645ed95" />
+    <link rel="stylesheet" type="text/css" href="../_static/status.css?v=614de2fc" />
     
     
 
@@ -239,24 +239,39 @@
 <li class="toctree-l2"><a class="reference internal" href="fcntl.html">fcntl.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fenv.html">fenv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="float.html">float.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fmtmsg.html">fmtmsg.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fnmatch.html">fnmatch.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ftw.html">ftw.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glob.html">glob.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grp.html">grp.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iconv.html">iconv.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="inttypes.html">inttypes.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="langinfo.html">langinfo.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="libgen.html">libgen.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits.html">limits.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="locale.html">locale.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="math.html">math.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monetary.html">monetary.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqueue.html">mqueue.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ndbm.html">ndbm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="net/if.html">net/if.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="netdb.html">netdb.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netinet/in.html">netinet/in.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="netinet/tcp.html">netinet/tcp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="nl_types.html">nl_types.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="poll.html">poll.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pwd.html">pwd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regex.html">regex.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sched.html">sched.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="search.html">search.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="semaphore.html">semaphore.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setjmp.html">setjmp.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="signal.html">signal.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="spawn.html">spawn.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdbit.html">stdbit.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdckdint.html">stdckdint.h</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">stdfix.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdint.html">stdint.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdio.html">stdio.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stdlib.html">stdlib.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="string.html">string.h</a></li>
@@ -267,22 +282,31 @@
 <li class="toctree-l2"><a class="reference internal" href="sys/resource.html">sys/resource.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/select.html">sys/select.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/sem.html">sys/sem.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/shm.html">sys/shm.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/socket.html">sys/socket.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/stat.html">sys/stat.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/statvfs.html">sys/statvfs.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/time.html">sys/time.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/times.html">sys/times.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/types.html">sys/types.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/uio.html">sys/uio.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sys/un.html">sys/un.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/utsname.html">sys/utsname.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sys/wait.html">sys/wait.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="syslog.html">syslog.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tar.html">tar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="termios.html">termios.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="threads.html">threads.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="time.html">time.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="uchar.html">uchar.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ulimit.html">ulimit.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="unistd.html">unistd.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utime.html">utime.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utmpx.html">utmpx.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wchar.html">wchar.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wctype.html">wctype.h</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pthread.html">pthread.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wordexp.html">wordexp.h</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../arch_support.html">Architecture Support</a></li>
@@ -376,7 +400,8 @@
         <article role="main" id="furo-main-content">
           <section id="stdfix-h">
 <h1>stdfix.h<a class="headerlink" href="#stdfix-h" title="Link to this heading">¶</a></h1>
-<p>Columns list the 12 fixed-point suffixes: <code class="docutils literal notranslate"><span class="pre">uhr</span></code>/<code class="docutils literal notranslate"><span class="pre">hr</span></code> (<code class="docutils literal notranslate"><span class="pre">unsigned</span></code>/<code class="docutils literal notranslate"><span class="pre">signed</span> <span class="pre">short</span> <span class="pre">fract</span></code>), <code class="docutils literal notranslate"><span class="pre">ur</span></code>/<code class="docutils literal notranslate"><span class="pre">r</span></code> (<code class="docutils literal notranslate"><span class="pre">unsigned</span></code>/<code class="docutils literal notranslate"><span class="pre">signed</span> <span class="pre">fract</span></code>), <code class="docutils literal notranslate"><span class="pre">ulr</span></code>/<code class="docutils literal notranslate"><span class="pre">lr</span></code> (<code class="docutils literal notranslate"><span class="pre">unsigned</span></code>/<code class="docutils literal notranslate"><span class="pre">signed</span> <span class="pre">long</span> <span class="pre">fract</span></code>), and <code class="docutils literal notranslate"><span class="pre">uhk</span></code>/<code class="docutils literal notranslate"><span class="pre">hk</span></code>, <code class="docutils literal notranslate"><span class="pre">uk</span></code>/<code class="docutils literal notranslate"><span class="pre">k</span></code>, <code class="docutils literal notranslate"><span class="pre">ulk</span></code>/<code class="docutils literal notranslate"><span class="pre">lk</span></code> for the corresponding <code class="docutils literal notranslate"><span class="pre">accum</span></code> types.  See <a class="reference internal" href="../math/stdfix.html"><span class="doc">Fixed-Point Arithmetic</span></a> for compiler requirements, precision macros, formatted I/O specifiers, and ABI notes.</p>
+<div class="hc-card"><div class="hc-summary-top"><div class="hc-pill-row"><span class="hc-pill hc-pill-ext">ISO/IEC TR 18037</span></div><div class="hc-overall-stat">85 / 94 <span style="color:var(--hc-blue-text)">(90.4%)</span></div></div><div class="hc-progress-track hc-progress-lg" role="progressbar" aria-label="stdfix.h overall implementation progress" aria-valuenow="90.4" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:90.4%"></div></div><div class="hc-grid-cards"><div class="hc-mini-card"><div class="hc-mini-title">ISO/IEC TR 18037</div><div class="hc-mini-val">81 / 86 <span style="color:var(--hc-purple-text)">(94.2%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h ISO/IEC TR 18037 completion" aria-valuenow="94.2" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-purple-text);width:94.2%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Base Families</div><div class="hc-mini-val">11 / 16 <span style="color:var(--hc-green-text)">(68.8%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Base Families completion" aria-valuenow="68.8" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-green-text);width:68.8%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Functions</div><div class="hc-mini-val">2 / 2 <span style="color:var(--hc-green-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Functions completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-green-text);width:100.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Macros</div><div class="hc-mini-val">60 / 64 <span style="color:var(--hc-blue-text)">(93.8%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Macros completion" aria-valuenow="93.8" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:93.8%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">Types</div><div class="hc-mini-val">12 / 12 <span style="color:var(--hc-purple-text)">(100.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h Types completion" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-purple-text);width:100.0%"></div></div></div></div></div>
+<div class="hc-card"><div class="hc-subcard-title">Precision Coverage</div><div class="hc-grid-prec"><div class="hc-mini-card"><div class="hc-mini-title">uhr</div><div class="hc-mini-val">5 / 11 <span style="color:var(--hc-amber-text)">(45.5%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h uhr completion" aria-valuenow="45.5" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-amber-text);width:45.5%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">hr</div><div class="hc-mini-val">5 / 12 <span style="color:var(--hc-amber-text)">(41.7%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h hr completion" aria-valuenow="41.7" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-amber-text);width:41.7%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">ur</div><div class="hc-mini-val">9 / 15 <span style="color:var(--hc-blue-text)">(60.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h ur completion" aria-valuenow="60.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:60.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">r</div><div class="hc-mini-val">9 / 16 <span style="color:var(--hc-blue-text)">(56.2%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h r completion" aria-valuenow="56.2" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:56.2%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">ulr</div><div class="hc-mini-val">9 / 15 <span style="color:var(--hc-blue-text)">(60.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h ulr completion" aria-valuenow="60.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:60.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">lr</div><div class="hc-mini-val">9 / 16 <span style="color:var(--hc-blue-text)">(56.2%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h lr completion" aria-valuenow="56.2" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:56.2%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">uhk</div><div class="hc-mini-val">6 / 11 <span style="color:var(--hc-blue-text)">(54.5%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h uhk completion" aria-valuenow="54.5" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:54.5%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">hk</div><div class="hc-mini-val">6 / 12 <span style="color:var(--hc-blue-text)">(50.0%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h hk completion" aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:50.0%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">uk</div><div class="hc-mini-val">10 / 15 <span style="color:var(--hc-blue-text)">(66.7%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h uk completion" aria-valuenow="66.7" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:66.7%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">k</div><div class="hc-mini-val">10 / 16 <span style="color:var(--hc-blue-text)">(62.5%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h k completion" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:62.5%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">ulk</div><div class="hc-mini-val">8 / 15 <span style="color:var(--hc-blue-text)">(53.3%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h ulk completion" aria-valuenow="53.3" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:53.3%"></div></div></div><div class="hc-mini-card"><div class="hc-mini-title">lk</div><div class="hc-mini-val">9 / 16 <span style="color:var(--hc-blue-text)">(56.2%)</span></div><div class="hc-progress-track" role="progressbar" aria-label="stdfix.h lk completion" aria-valuenow="56.2" aria-valuemin="0" aria-valuemax="100"><div class="hc-progress-fill" style="background:var(--hc-blue-text);width:56.2%"></div></div></div></div></div><p>Columns list the 12 fixed-point suffixes: <code class="docutils literal notranslate"><span class="pre">uhr</span></code>/<code class="docutils literal notranslate"><span class="pre">hr</span></code> (<code class="docutils literal notranslate"><span class="pre">unsigned</span></code>/<code class="docutils literal notranslate"><span class="pre">signed</span> <span class="pre">short</span> <span class="pre">fract</span></code>), <code class="docutils literal notranslate"><span class="pre">ur</span></code>/<code class="docutils literal notranslate"><span class="pre">r</span></code> (<code class="docutils literal notranslate"><span class="pre">unsigned</span></code>/<code class="docutils literal notranslate"><span class="pre">signed</span> <span class="pre">fract</span></code>), <code class="docutils literal notranslate"><span class="pre">ulr</span></code>/<code class="docutils literal notranslate"><span class="pre">lr</span></code> (<code class="docutils literal notranslate"><span class="pre">unsigned</span></code>/<code class="docutils literal notranslate"><span class="pre">signed</span> <span class="pre">long</span> <span class="pre">fract</span></code>), and <code class="docutils literal notranslate"><span class="pre">uhk</span></code>/<code class="docutils literal notranslate"><span class="pre">hk</span></code>, <code class="docutils literal notranslate"><span class="pre">uk</span></code>/<code class="docutils literal notranslate"><span class="pre">k</span></code>, <code class="docutils literal notranslate"><span class="pre">ulk</span></code>/<code class="docutils literal notranslate"><span class="pre">lk</span></code> for the corresponding <code class="docutils literal notranslate"><span class="pre">accum</span></code> types.  See <a class="reference internal" href="../math/stdfix.html"><span class="doc">Fixed-Point Arithmetic</span></a> for compiler requirements, precision macros, formatted I/O specifiers, and ABI notes.</p>
 <section id="fixed-point-arithmetics">
 <h2>Fixed-point Arithmetics<a class="headerlink" href="#fixed-point-arithmetics" title="Link to this heading">¶</a></h2>
 <div class="hc-table-wrap"><table class="hc-table hc-table-families">
@@ -520,23 +545,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="stdio.html">
+          <a class="next-page" href="stdint.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">stdio.h</div>
+                <div class="title">stdint.h</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="stdbit.html">
+          <a class="prev-page" href="stdckdint.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">stdbit.h</div>
+                <div class="title">stdckdint.h</div>
                 
               </div>
             </a>
@@ -592,6 +617,6 @@
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script type="module" src="../_static/scripts/furo.js?v=e16e2f1e"></script>
-    <script src="../_static/llvm-sphinx/copybutton.js"></script>
+    <script src="../_static/llvm-sphinx/copybutton.js?v=972498a0"></script>
     </body>
 </html>
